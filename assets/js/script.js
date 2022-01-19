@@ -1,18 +1,19 @@
-function startGame(){
-    gameLoop();
-    }
-   let numLoops = 0;
-    function gameLoop(){
-        numLoops++;
-        if(numLoops < 10) {
-        alert("game loop running");
-        setTimeout(gameLoop, 2000);
-        }
-        else{
-            alert("Game Over")
-        }
 
-    }
-           
-        
-    
+document.getElementById("play-btn").addEventListener("click", startGame);
+
+function startGame() {
+    gameLoop();
+}
+
+function gameLoop(){
+    alert("mow we're running the game loop")
+}
+
+function createSpacehips
+
+
+function flashSpaceships
+
+function incrementScore
+
+function countdownTimer
