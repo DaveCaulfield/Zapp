@@ -1,3 +1,6 @@
 function startGame(){
-    alert("Test startGame")
+    gameLoop()
+    }
+    function gameLoop(){
+        alert("game loop test");
     }
