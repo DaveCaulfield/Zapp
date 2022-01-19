@@ -1,6 +1,18 @@
 function startGame(){
-    gameLoop()
+    gameLoop();
     }
+   let numLoops = 0;
     function gameLoop(){
-        alert("game loop test");
+        numLoops++;
+        if(numLoops < 10) {
+        alert("game loop running");
+        setTimeout(gameLoop, 2000);
+        }
+        else{
+            alert("Game Over")
+        }
+
     }
+           
+        
+    
