@@ -31,3 +31,12 @@ body{
     background: url(/assets/images/city-image.jpg);
     background-size: cover ; 
 }
+
+
+.spaceship{
+    background-color: greenyellow;
+    height: 80px;
+    width: 80px;
+    padding: 5px;
+    margin: 15px;
+}
