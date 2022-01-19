@@ -40,3 +40,13 @@ body{
     padding: 5px;
     margin: 15px;
 }
+
+
+#play-btn{
+    background-color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    border: 2px solid black;
+    padding: 2px 10px 2px 10px;
+    margin-top: 5px;
+}
