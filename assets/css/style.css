@@ -13,6 +13,7 @@ body{
     justify-content: center;
     height: 100vh;
     width: 100vw;
+    /*border: 2px solid white;*/
 }
 
 
@@ -22,14 +23,13 @@ body{
     flex-wrap: wrap;
     align-items: start;
     justify-content: center;
-   
     height: 95vh;
     width: 95vw;
     max-width: 2000px;
     border-radius: 5%;
-
     background: url(/assets/images/city-image.jpg);
-    background-size: cover ; 
+    background-size: cover; 
+    border: 2px solid white;
 }
 
 
