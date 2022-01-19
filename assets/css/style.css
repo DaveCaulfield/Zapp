@@ -70,7 +70,16 @@ body{
     width: 80px;
     padding: 5px;
     margin: 15px;
+    background: url(/assets/images/alien.jpg);
+ 
+    background-size: cover;
+ 
+    /*  background-size: cover;
+  object-fit: contain;
+  overflow: hidden;
+  */
 }
+
 
 
 #play-btn{
@@ -81,4 +90,12 @@ body{
     padding: 2px 10px 2px 10px;
     margin-top: 5px;
     font-family: orbitron;
+}
+
+.invisible{
+    display: none;
+}
+
+.visible{
+    display: block;
 }
