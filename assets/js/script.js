@@ -55,7 +55,7 @@ function spaceShips() {
     ufoArea.children[randomUfo-1].innerHTML = "Rogue UFO";
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
-    
+        document.getElementById("player-score").innerText = "score: " + score * 1000;
     }
 }
 
