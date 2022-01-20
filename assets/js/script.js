@@ -22,16 +22,17 @@ after 12 loop set Game over.
 */
 let loopCount = 0;
 let spaceshipVisible = false;
+let score = 0;
 function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
-    flightFormation();
+    spaceShips();
     flashingSpaceships();
     loopCount++;
     if(loopCount < 12){
-    setTimeout(gameLoop, 1000);
+    setTimeout(gameLoop, 1100);
 }
 else {
-    alert("game over");
+    alert("you scored " + score * 1000);
 }
 }
 
@@ -45,14 +46,19 @@ set randomUfo to a random number between 1-8
 (use random-1 to translate 1-8 into index count 0-7)
 set the child divs innerHTML to "Rogue UFO"
 */
-function flightFormation() {
+function spaceShips() {
     let  ufoArea= document.getElementById("game-area");
     for(let i=0; i < 8; i++){
         ufoArea.children[i].innerHTML = "Alien";
     }
     let randomUfo = Math.floor(Math.random() * 8) + 1;
     ufoArea.children[randomUfo-1].innerHTML = "Rogue UFO";
+    ufoArea.children[randomUfo-1].onclick = function(){
+        score++;
+    
+    }
 }
+
 
 
 
