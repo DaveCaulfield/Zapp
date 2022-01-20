@@ -38,13 +38,15 @@ else {
 
 
 /*  
-flight formation function.
-set the game-area to ufoArea
+spaceShips function:
+set the id game-area as ufoArea
 loop through the child divs for every i less than 8
 set the child divs innerHTML to "Alien"
 set randomUfo to a random number between 1-8
 (use random-1 to translate 1-8 into index count 0-7)
 set the child divs innerHTML to "Rogue UFO"
+set onclick feature to increment score.
+apply score to the player-score div.
 */
 function spaceShips() {
     let  ufoArea= document.getElementById("game-area");
@@ -64,7 +66,7 @@ function spaceShips() {
 
 
 /*flashing spaceship function
-set game-area to gameArea.
+set id game-area as gameArea.
 set class for CSS .visible or .invisible. Depends if spaceshipVisible is true or false.
 loop through 8 child divs and set the class on each each div.
 */
