@@ -69,17 +69,21 @@ body{
 .spaceship{
     background-color: greenyellow;
     height: 80px;
-    width: 80px;
+    width: 110px;
     padding: 5px;
-    margin: 15px;
+    margin: 20px;
     background: url(/assets/images/alien.jpg);
- 
     background-size: cover;
  
     /*  background-size: cover;
   object-fit: contain;
   overflow: hidden;
   */
+}
+
+.rogue-ufo{
+    background: url(/assets/images/rogue-ufo.jpg);
+    background-size: cover;
 }
 
 

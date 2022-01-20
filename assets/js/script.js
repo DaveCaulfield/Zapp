@@ -25,11 +25,11 @@ let spaceshipVisible = false;
 let score = 0;
 function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
-    spaceShips();
+    spaceships();
     flashingSpaceships();
     loopCount++;
     if(loopCount < 12){
-    setTimeout(gameLoop, 1100);
+    setTimeout(gameLoop, 1200);
 }
 else {
     alert("you scored " + score * 1000);
@@ -48,22 +48,19 @@ set the child divs innerHTML to "Rogue UFO"
 set onclick feature to increment score.
 apply score to the player-score div.
 */
-function spaceShips() {
+function spaceships() {
     let  ufoArea= document.getElementById("game-area");
     for(let i=0; i < 8; i++){
-        ufoArea.children[i].innerHTML = "Alien";
+        ufoArea.children[i].innerHTML = "";
     }
     let randomUfo = Math.floor(Math.random() * 8) + 1;
     ufoArea.children[randomUfo-1].innerHTML = "Rogue UFO";
+   
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
         document.getElementById("player-score").innerText = "Score: " + score * 1000;
-    }
+    } 
 }
-
-
-
-
 
 /*flashing spaceship function
 set id game-area as gameArea.
@@ -78,11 +75,6 @@ function flashingSpaceships(){
         gameArea.children[i].className = setClass;
     }
 }
-
-
-
-
-
 
 
 
