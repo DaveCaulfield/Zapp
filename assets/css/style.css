@@ -63,6 +63,7 @@ body{
     background: url(/assets/images/city-image.jpg);
     background-size: cover; 
     border: 2px solid white;
+    cursor:crosshair;
 }
 
 
