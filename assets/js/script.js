@@ -1,18 +1,30 @@
 /*Add event listener to play button to call startGame function*/
 document.getElementById("play-btn").addEventListener("click", startGame);
 
-/* Start Game function invokes the game loop*/
+/* Start Game function:
+Calls the game loop
+*/
 function startGame() {
     gameLoop();
 }
 
-/* Game loop function:
-loops through a loop count
-calls the flashing spaceship function*/
+/* 
+start loop count at 0.
+start spaceshipVisible to False.
+Game loop function:
+set spaceshipVisible to Not False.
+call the flight formation function.
+calls the flashing spaceship function.
+increment loop count.
+loop through to 12.
+wait time X to call game loop again.
+after 12 loop set Game over. 
+*/
 let loopCount = 0;
 let spaceshipVisible = false;
 function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
+    flightFormation();
     flashingSpaceships();
     loopCount++;
     if(loopCount < 12){
@@ -45,7 +57,11 @@ function flightFormation() {
 
 
 
-/*flashing spaceship function*/
+/*flashing spaceship function
+set game-area to gameArea.
+set class for CSS .visible or .invisible. Depends if spaceshipVisible is true or false.
+loop through 8 child divs and set the class on each each div.
+*/
 function flashingSpaceships(){
     let gameArea = document.getElementById("game-area");
     let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
