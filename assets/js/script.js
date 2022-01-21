@@ -28,14 +28,15 @@ function gameLoop(){
     spaceships();
     flashingSpaceships();
     loopCount++;
-    if(loopCount < 12){
-    setTimeout(gameLoop, 1200);
+    if(loopCount < 15){
+    setTimeout(gameLoop, 1000);
 }
 else {
     alert("you scored " + score * 1000);
-}
+    window.location.reload();
 }
 
+}/* end game loop...........*/
 
 /*  
 spaceShips function:
@@ -54,7 +55,7 @@ function spaceships() {
         ufoArea.children[i].innerHTML = "";
     }
     let randomUfo = Math.floor(Math.random() * 8) + 1;
-    ufoArea.children[randomUfo-1].innerHTML = "Rogue UFO";
+    ufoArea.children[randomUfo-1].innerHTML = "ROGUE-UFO";
    
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
