@@ -32,11 +32,11 @@ function gameLoop(){
     setTimeout(gameLoop, 1000);
 }
 else {
-    alert("you scored " + score * 1000);
+    alert("you scored " + score * 1000 + " Crypto Coins");
     window.location.reload();
 }
 
-}/* end game loop...........*/
+}/*...closing bracket game loop...........*/
 
 /*  
 spaceShips function:
@@ -53,13 +53,18 @@ function spaceships() {
     let  ufoArea= document.getElementById("game-area");
     for(let i=0; i < 8; i++){
         ufoArea.children[i].innerHTML = "";
+        ufoArea.children[i].onclick = function(){
+            score--;
+            document.getElementById("player-score").innerText = "Crypto Coins: " + score * 1000;
+        }   
     }
+
     let randomUfo = Math.floor(Math.random() * 8) + 1;
     ufoArea.children[randomUfo-1].innerHTML = "ROGUE-UFO";
    
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
-        document.getElementById("player-score").innerText = "Score: " + score * 1000;
+        document.getElementById("player-score").innerText = "Crypto Coins: " + score * 1000;
     } 
 }
 
