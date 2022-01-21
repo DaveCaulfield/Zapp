@@ -66,7 +66,7 @@ function spaceships() {
         ufoArea.children[i].innerHTML = "";
         ufoArea.children[i].onclick = function(){
             score--;
-            document.getElementById("player-score").innerText = "Crypto Coins: " + score * 1000;
+            document.getElementById("player-score").innerText = "Crypto: " + score * 1000 +  " Coins";
             playAlienSound();
         }   
     }
@@ -74,7 +74,7 @@ function spaceships() {
     ufoArea.children[randomUfo-1].innerHTML = "ROGUE-UFO";
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
-        document.getElementById("player-score").innerText = "Crypto Coins: " + score * 1000;
+        document.getElementById("player-score").innerText = "Crypto: " + score * 1000 +  " Coins";
         playUfoSound();
     } 
 }
