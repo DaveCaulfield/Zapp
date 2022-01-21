@@ -6,6 +6,15 @@ Calls the game loop
 */
 function startGame() {
     gameLoop();
+    startTimer ();
+}
+
+
+let time = 30;
+function startTimer (){
+  time = time - 1;
+  document.getElementById("time-display").innerHTML = "Time:  " + time + " seconds";
+  setTimeout(startTimer, 1000);
 }
 
 /* 
@@ -53,6 +62,7 @@ send the score to update the scoreboard.
 call the playAliensound feature when clicked
 create a random number between 1-8
 (use random-1 to translate 1-8 into index count 0-7)
+add .ufo class to apply ufo image.
 set the child divs innerHTML to "Rogue UFO"
 set onclick feature to increment score.
 send the score to update the scoreboard.
@@ -72,7 +82,7 @@ function spaceships() {
     }
     let randomUfo = Math.floor(Math.random() * 8) + 1;
     ufoArea.children[randomUfo-1].className = setClass + " ufo";
-    ufoArea.children[randomUfo-1].innerHTML = "ROGUE-UFO";
+    ufoArea.children[randomUfo-1].innerHTML = "";
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
         document.getElementById("player-score").innerText = "Crypto: " + score * 1000 +  " Coins";
