@@ -10,15 +10,17 @@ function startGame() {
 
 /* 
 start loop count at 0.
-start spaceshipVisible to False.
+spaceshipVisible begins at False.
+score begins at 0
 Game loop function:
 set spaceshipVisible to Not False.
-call the flight formation function.
-calls the flashing spaceship function.
+call the spaceships function.
+call the flashing spaceship function.
 increment loop count.
 loop through to 12.
 wait time X to call game loop again.
-after 12 loop set Game over. 
+after loop count alert Game over. 
+Auto refresh after game over alert. 
 */
 let loopCount = 0;
 let spaceshipVisible = false;
@@ -41,14 +43,18 @@ else {
 
 /*  
 spaceShips function:
-set the id game-area as ufoArea
+retrieve the game area div and store it as ufoArea variable.
 loop through the child divs for every i less than 8
 set the child divs innerHTML to "Alien"
-set randomUfo to a random number between 1-8
+set the decrement score onclick feature.
+send the score to update the scoreboard.
+call the playAliensound feature when clicked
+create a random number between 1-8
 (use random-1 to translate 1-8 into index count 0-7)
 set the child divs innerHTML to "Rogue UFO"
 set onclick feature to increment score.
-apply score to the player-score div.
+send the score to update the scoreboard.
+call the playUfoSound feature when ufo clicked
 */
 function spaceships() {
     let  ufoArea= document.getElementById("game-area");
@@ -62,7 +68,6 @@ function spaceships() {
     }
     let randomUfo = Math.floor(Math.random() * 8) + 1;
     ufoArea.children[randomUfo-1].innerHTML = "ROGUE-UFO";
-   
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
         document.getElementById("player-score").innerText = "Crypto Coins: " + score * 1000;
@@ -71,12 +76,10 @@ function spaceships() {
 }
 
 
-
-
 /*flashing spaceship function
-set id game-area as gameArea.
-set class for CSS .visible or .invisible. Depends if spaceshipVisible is true or false.
-loop through 8 child divs and set the class on each each div.
+retrieve the game area div and store it as gameArea variable.
+set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
+loop through the 8 child divs and set the class on each each div.
 */
 function flashingSpaceships(){
     let gameArea = document.getElementById("game-area");
@@ -87,16 +90,19 @@ function flashingSpaceships(){
     }
 }
 
+/* sound effect for play button*/
 function playStart() {
     var audioStart = document.getElementById("audio-start");
     audioStart.play();
   }
 
+  /* sound effect for zapping ufo*/
   function playUfoSound() {
     var audioUfo = document.getElementById("audio-ufo");
     audioUfo.play();
   }
 
+  /* sound effect for zapping Alien*/
   function playAlienSound() {
     var audioAlien = document.getElementById("audio-alien");
     audioAlien.play();
@@ -104,7 +110,7 @@ function playStart() {
 
 
 /*
-
-
 function countdownTimer
+
+
 */
