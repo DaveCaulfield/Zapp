@@ -2,13 +2,18 @@
 document.getElementById("play-btn").addEventListener("click", startGame);
 
 /* Start Game function:
-Calls the game loop
+calls the game loop function
+calls the srat timer function
 */
 function startGame() {
     gameLoop();
-    startTimer ();
+    startTimer();
 }
 
+/* Timer function:
+counts down from 30.
+displays time in timer display
+*/
 
 let time = 30;
 function startTimer (){
