@@ -38,6 +38,11 @@ else {
 
 }/*...closing bracket game loop...........*/
 
+function playStart() {
+    var audioStart = document.getElementById("audio-start");
+    audioStart.play();
+  }
+
 /*  
 spaceShips function:
 set the id game-area as ufoArea
