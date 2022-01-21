@@ -44,8 +44,10 @@ else {
 /*  
 spaceShips function:
 retrieve the game area div and store it as ufoArea variable.
-loop through the child divs for every i less than 8
-set the child divs innerHTML to "Alien"
+set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
+loop through the child divs for every i less than 8.
+set class.
+set the child divs innerHTML to "Alien".
 set the decrement score onclick feature.
 send the score to update the scoreboard.
 call the playAliensound feature when clicked
