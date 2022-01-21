@@ -82,8 +82,8 @@ body{
   */
 }
 
-.rogue-ufo{
-    background: url(/assets/images/rogue-ufo.jpg);
+.ufo{
+    background: url(/assets/images/ufo.jpg);
     background-size: cover;
 }
 

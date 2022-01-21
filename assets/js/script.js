@@ -71,6 +71,7 @@ function spaceships() {
         }   
     }
     let randomUfo = Math.floor(Math.random() * 8) + 1;
+    ufoArea.children[randomUfo-1].className = setClass + " ufo";
     ufoArea.children[randomUfo-1].innerHTML = "ROGUE-UFO";
     ufoArea.children[randomUfo-1].onclick = function(){
         score++;
