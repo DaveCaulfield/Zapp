@@ -28,7 +28,7 @@ let score = 0;
 function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
     spaceships();
-    flashingSpaceships();
+    // flashingSpaceships();
     loopCount++;
     if(loopCount < 15){
     setTimeout(gameLoop, 1000);
@@ -57,8 +57,10 @@ send the score to update the scoreboard.
 call the playUfoSound feature when ufo clicked
 */
 function spaceships() {
-    let  ufoArea= document.getElementById("game-area");
+    let ufoArea= document.getElementById("game-area");
+    let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
     for(let i=0; i < 8; i++){
+        ufoArea.children[i].className = setClass;
         ufoArea.children[i].innerHTML = "";
         ufoArea.children[i].onclick = function(){
             score--;
@@ -81,14 +83,14 @@ retrieve the game area div and store it as gameArea variable.
 set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
 loop through the 8 child divs and set the class on each each div.
 */
-function flashingSpaceships(){
-    let gameArea = document.getElementById("game-area");
-    let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
+// function flashingSpaceships(){
+//     let gameArea = document.getElementById("game-area");
+//     let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
     
-    for (let i=0; i < 8; i++) {
-        gameArea.children[i].className = setClass;
-    }
-}
+//     for (let i=0; i < 8; i++) {
+//         gameArea.children[i].className = setClass;
+//     }
+// }
 
 /* sound effect for play button*/
 function playStart() {
