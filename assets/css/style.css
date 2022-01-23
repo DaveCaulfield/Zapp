@@ -117,3 +117,44 @@ body{
 .visible{
     display: block;
 }
+
+
+
+/*.........media queries...............*/
+
+@media screen and (max-width: 480px) {
+    #game-area {
+        display:flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        height: 82vh;
+        padding: 3px;
+        border-radius: 40px;
+    }
+
+    #score-board {
+        display: flex;
+        justify-content: space-around;
+        height:10vh;
+        font-size: 0.8rem;
+        font-weight: normal;
+    }
+
+body {
+display: grid;
+grid-auto-rows: auto;
+}
+
+
+.spaceship{
+    /* display: none; */
+    height: 60px;
+    width: 90px;
+    padding: 5px;
+    margin: 10px;
+}
+
+#time-display{
+width: 55%;
+}
+}
