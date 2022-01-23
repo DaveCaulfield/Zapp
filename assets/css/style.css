@@ -158,3 +158,28 @@ grid-auto-rows: auto;
 width: 55%;
 }
 }
+
+
+
+
+/*................meadia query screen 350px................*/
+
+@media screen and (max-width:350px) {
+    #game-area {
+       
+        height: 75vh;
+    }
+
+
+
+    #score-board {
+        height:16vh;
+        font-size: 15px;
+    }
+
+    #time-display{
+        width: 50%;
+        height: 15vh;
+        }
+
+}
