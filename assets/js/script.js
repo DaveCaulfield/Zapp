@@ -18,7 +18,7 @@ displays time in timer display
 let time = 30;
 function startTimer (){
   time = time - 1;
-  document.getElementById("time-display").innerHTML = (`Timer @ ${time}sec`);
+  document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
   setTimeout(startTimer, 1000);
 }
 
@@ -81,7 +81,7 @@ let alien = spaceShips.children[i];
 alien.className = setClass;
 alien.onclick = function zapAlien(){
           score--;
-          document.getElementById("player-score").innerText = "Crypto Coins @ " + score * 1000;
+          document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
           playAlienSound();
       };   
   }
@@ -90,7 +90,7 @@ let ufo =  spaceShips.children[randomUfo-1];
 ufo.className = setClass + " ufo";
 ufo.onclick = function zapUfo(){
       score++;
-      document.getElementById("player-score").innerText = "Crypto Coins @ " + score * 1000;
+      document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
       playUfoSound();
   };
   
