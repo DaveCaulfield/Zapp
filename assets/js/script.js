@@ -74,25 +74,25 @@ send the score to update the scoreboard.
 call the playUfoSound feature when ufo clicked
 */
 function spaceships() {
-    let ufoArea= document.getElementById("game-area");
-    let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
-    for(let i=0; i < 8; i++){
-        ufoArea.children[i].className = setClass;
-        ufoArea.children[i].innerHTML = "";
-        ufoArea.children[i].onclick = function(){
-            score--;
-            document.getElementById("player-score").innerText = "Crypto: " + score * 1000 +  " Coins";
-            playAlienSound();
-        }   
-    }
-    let randomUfo = Math.floor(Math.random() * 8) + 1;
-    ufoArea.children[randomUfo-1].className = setClass + " ufo";
-    ufoArea.children[randomUfo-1].innerHTML = "";
-    ufoArea.children[randomUfo-1].onclick = function(){
-        score++;
-        document.getElementById("player-score").innerText = "Crypto: " + score * 1000 +  " Coins";
-        playUfoSound();
-    } 
+  let spaceShips= document.getElementById("game-area");
+  let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
+  for(let i=0; i < 8; i++){
+let alien = spaceShips.children[i];
+alien.className = setClass;
+alien.onclick = function zapAlien(){
+          score--;
+          document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
+          playAlienSound();
+      };   
+  }
+let randomUfo = Math.floor(Math.random() * 8) + 1;
+let ufo =  spaceShips.children[randomUfo-1];
+ufo.onclick = function zapUfo(){
+      score++;
+      document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
+      playUfoSound();
+  };
+  ufo.className = setClass + " ufo";
 }
 
 
