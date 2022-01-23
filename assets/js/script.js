@@ -18,7 +18,7 @@ displays time in timer display
 let time = 30;
 function startTimer (){
   time = time - 1;
-  document.getElementById("time-display").innerHTML = "Time:  " + time + " seconds";
+  document.getElementById("time-display").innerHTML = (`Time: ${time} seconds`);
   setTimeout(startTimer, 1000);
 }
 
