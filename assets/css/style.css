@@ -20,7 +20,6 @@ body{
 #score-board {
     display: flex;
     justify-content: space-around;
-    height:5vh;
     width: 95vw;
     max-width: 2000px;
     color: greenyellow;
@@ -37,6 +36,7 @@ body{
         margin-bottom: 5px;
         font-family: orbitron;
         font-weight: bold;
+        flex-wrap: wrap;
         }
         
         #player-score{
@@ -73,7 +73,6 @@ body{
 
 .spaceship{
     /* display: none; */
-    background-color: greenyellow;
     height: 80px;
     width: 110px;
     padding: 5px;
@@ -99,11 +98,15 @@ body{
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
-    border: 2px solid black;
-    padding: 2px 10px 2px 10px;
-    margin-top: 5px;
+    padding: 3px 10px 3px 10px;
+    margin-top: 5px 3px;
     font-family: orbitron;
     font-weight: bold;
+    border: 2px solid black;
+}
+
+#play-btn:hover{
+    background-color: white;
 }
 
 .invisible{

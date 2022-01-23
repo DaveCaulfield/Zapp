@@ -22,6 +22,7 @@ function startTimer (){
   setTimeout(startTimer, 1000);
 }
 
+
 /* 
 start loop count at 0.
 spaceshipVisible begins at False.
@@ -87,12 +88,13 @@ alien.onclick = function zapAlien(){
   }
 let randomUfo = Math.floor(Math.random() * 8) + 1;
 let ufo =  spaceShips.children[randomUfo-1];
+ufo.className = setClass + " ufo";
 ufo.onclick = function zapUfo(){
       score++;
       document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
       playUfoSound();
   };
-  ufo.className = setClass + " ufo";
+  
 }
 
 
