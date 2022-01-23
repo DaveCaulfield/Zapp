@@ -18,7 +18,7 @@ displays time in timer display
 let time = 30;
 function startTimer (){
   time = time - 1;
-  document.getElementById("time-display").innerHTML = (`Time: ${time} seconds`);
+  document.getElementById("time-display").innerHTML = (`Timer @ ${time}sec`);
   setTimeout(startTimer, 1000);
 }
 
@@ -43,7 +43,6 @@ let score = 0;
 function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
     spaceships();
-    // flashingSpaceships();
     loopCount++;
     if(loopCount < 31){
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1500);
@@ -58,7 +57,7 @@ else {
 
 /*  
 spaceShips function:
-retrieve the game area div and store it as ufoArea variable.
+retrieve the game area div and store it as spaceShips variable.
 set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
 loop through the child divs for every i less than 8.   
 set class.
@@ -82,7 +81,7 @@ let alien = spaceShips.children[i];
 alien.className = setClass;
 alien.onclick = function zapAlien(){
           score--;
-          document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
+          document.getElementById("player-score").innerText = "Crypto Coins @ " + score * 1000;
           playAlienSound();
       };   
   }
@@ -91,26 +90,12 @@ let ufo =  spaceShips.children[randomUfo-1];
 ufo.className = setClass + " ufo";
 ufo.onclick = function zapUfo(){
       score++;
-      document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
+      document.getElementById("player-score").innerText = "Crypto Coins @ " + score * 1000;
       playUfoSound();
   };
   
 }
 
-
-/*flashing spaceship function
-retrieve the game area div and store it as gameArea variable.
-set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
-loop through the 8 child divs and set the class on each each div.
-*/
-// function flashingSpaceships(){
-//     let gameArea = document.getElementById("game-area");
-//     let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
-    
-//     for (let i=0; i < 8; i++) {
-//         gameArea.children[i].className = setClass;
-//     }
-// }
 
 /* sound effect for play button*/
 function playStart() {
@@ -134,9 +119,3 @@ function playStart() {
     audioAlien.play();
   }
 
-
-/*
-function countdownTimer
-
-
-*/
