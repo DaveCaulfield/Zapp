@@ -45,8 +45,8 @@ function gameLoop(){
     spaceships();
     // flashingSpaceships();
     loopCount++;
-    if(loopCount < 15){
-    setTimeout(gameLoop, 1000);
+    if(loopCount < 31){
+    setTimeout(gameLoop, spaceshipVisible ? 1000 : 1500);
 }
 else {
     alert("you scored " + score * 1000 + " Crypto Coins");
@@ -60,7 +60,7 @@ else {
 spaceShips function:
 retrieve the game area div and store it as ufoArea variable.
 set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
-loop through the child divs for every i less than 8.
+loop through the child divs for every i less than 8.   
 set class.
 set the child divs innerHTML to "Alien".
 set the decrement score onclick feature.
