@@ -53,11 +53,12 @@ body{
 
 
 #game-area {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: start;
-    justify-content: center;
-    height: 95vh;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    justify-content: space-around;
+    grid-template-rows: 200px;
+ /* height: 0vh; */
+    height: 97vh;
     width: 95vw;
     max-width: 2000px;
     border-radius:50px;
@@ -69,6 +70,7 @@ body{
 
 
 .spaceship{
+    /* display: none; */
     background-color: greenyellow;
     height: 80px;
     width: 110px;
