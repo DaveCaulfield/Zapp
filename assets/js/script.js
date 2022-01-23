@@ -112,19 +112,23 @@ loop through the 8 child divs and set the class on each each div.
 
 /* sound effect for play button*/
 function playStart() {
-    var audioStart = document.getElementById("audio-start");
+    let audioStart = document.getElementById("audio-start");
+    let startBtn = document.getElementById("audio-start-btn");
     audioStart.play();
+    startBtn.play();
   }
 
   /* sound effect for zapping ufo*/
   function playUfoSound() {
-    var audioUfo = document.getElementById("audio-ufo");
+    let audioUfo = document.getElementById("audio-ufo");
+    let crypto = document.getElementById("audio-crypto");
     audioUfo.play();
+    crypto.play();
   }
 
   /* sound effect for zapping Alien*/
   function playAlienSound() {
-    var audioAlien = document.getElementById("audio-alien");
+    let audioAlien = document.getElementById("audio-alien");
     audioAlien.play();
   }
 
