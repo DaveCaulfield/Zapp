@@ -66,6 +66,8 @@ body{
     background-size: cover; 
     border: 2px solid white;
     cursor:crosshair;
+    background-position: center;
+    padding-top: 50px;
 }
 
 
