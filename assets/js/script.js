@@ -48,6 +48,7 @@ function gameLoop(){
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1500);
 }
 else {
+  playGameOver();
     alert("you scored " + score * 1000 + " Crypto Coins");
     window.location.reload();
 }
@@ -95,6 +96,14 @@ ufo.onclick = function zapUfo(){
   };
   
 }
+
+
+
+/* sound effect for game over*/
+function playGameOver(){
+  let audioGameOver = document.getElementById("audio-gameover");
+  audioGameOver.play();
+  }
 
 
 /* sound effect for play button*/
