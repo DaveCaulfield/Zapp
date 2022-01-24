@@ -45,7 +45,7 @@ function gameLoop(){
     spaceships();
     loopCount++;
     if(loopCount < 33){
-    setTimeout(gameLoop, spaceshipVisible ? 1000 : 1500);
+    setTimeout(gameLoop, spaceshipVisible ? 1000 : 1800);
 }
 else {
   playGameOver();
