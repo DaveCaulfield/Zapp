@@ -175,5 +175,6 @@ width: 55%;
     #score-board{
       font-size: 0.6rem;
       padding-top: 1px;
+      margin-bottom: 2px;
     }
 }
