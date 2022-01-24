@@ -15,7 +15,7 @@ counts down from 30.
 displays time in timer display
 */
 
-let time = 30;
+let time = 45;
 function startTimer (){
   time = time - 1;
   document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
@@ -44,7 +44,7 @@ function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
     spaceships();
     loopCount++;
-    if(loopCount < 31){
+    if(loopCount < 33){
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1500);
 }
 else {
