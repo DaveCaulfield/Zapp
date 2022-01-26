@@ -160,7 +160,7 @@ body {
     align-items: center;
     justify-content: start;
     height: 90%;
-    width: 85%;
+    width: 95%;
     max-width: 2000px;
     border-radius:50px;
     background: url(../../assets/images/zap-background-image.jpg);
@@ -202,6 +202,7 @@ body {
 
     #game-area {
         grid-template-rows: 100px;
+        height:80%;
     }
 
 .spaceship{
@@ -229,6 +230,7 @@ body {
         height: 82%;
         padding: 3px;
         border-radius: 40px;
+        width: 96%;
     }
 
     #score-board {
@@ -252,8 +254,8 @@ body {
     /* display: none; */
     height: 60px;
     width: 90px;
-    padding: 5px;
-    margin: 10px;
+    padding: 0px;
+    margin: 5px;
 }
 
 #time-display{
@@ -277,7 +279,7 @@ width: 55%;
 @media screen and (max-width: 350px) {
     #game-area {
         height: 80%;
-        width:97%;
+        width:98%;
         padding: 3px;
         border-radius: 30px;
         margin-top: 3px;
@@ -294,5 +296,5 @@ width: 55%;
 
     
 
-
+}
 }
