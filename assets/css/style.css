@@ -100,17 +100,35 @@ body {
     background-size: cover;
 }
 
+#game-buttons{
+    display: flex;
+    justify-content: space-around;
+    width: 50%;
+    max-width: 2000px;
 
+}
+
+#about-btn{
+    background-color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    font-family: orbitron;
+    font-weight: bold;
+    
+
+}
 
 #play-btn{
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 3px 10px 3px 10px;
-    margin: 5px 3px;
+    margin: 5px 10px;
     font-family: orbitron;
     font-weight: bold;
-    border: 2px solid black;
+    
 }
 
 #play-btn:hover{
