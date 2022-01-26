@@ -82,11 +82,11 @@ body {
 .spaceship{
     /* display: none; */
     height: 80px;
-    width: 110px;
+    width: 160px;
     padding: 5px;
     margin: 20px;
     border-radius: 5px;
-    background: url(../../assets/images/alien.jpg);
+    background: url(../../assets/images/aliens2.png);
     background-size: cover;
  
     /*  background-size: cover;
@@ -96,7 +96,7 @@ body {
 }
 
 .ufo{
-    background: url(../../assets/images/ufo.jpg);
+    background: url(../../assets/images/ufo2.png);
     background-size: cover;
 }
 
@@ -159,7 +159,7 @@ body {
 .spaceship{
     /* display: none; */
     height: 60px;
-    width: 90px;
+    width: 120px;
     padding: 5px;
     margin: 10px;
 }
@@ -176,6 +176,7 @@ width: 55%;
 @media screen and (max-width: 350px) {
     #game-area {
         height: 80%;
+        width:97%;
         padding: 3px;
         border-radius: 30px;
         margin-top: 3px;
@@ -188,4 +189,9 @@ width: 55%;
       margin-bottom: 2px;
       
     }
+
+
+    
+
+
 }
