@@ -142,7 +142,7 @@ body {
     #score-board {
         display: flex;
         justify-content: space-around;
-        height:10vh;
+        height:8vh;
         font-size: 0.8rem;
         font-weight: normal;
     }
@@ -186,5 +186,6 @@ width: 55%;
       font-size: 0.6rem;
       padding-top: 1px;
       margin-bottom: 2px;
+      
     }
 }
