@@ -116,8 +116,10 @@ body {
     margin: 5px 10px;
     font-family: orbitron;
     font-weight: bold;
-    
+}
 
+#about-btn:hover{
+    background-color: white;
 }
 
 #play-btn{
@@ -153,12 +155,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     height: 90%;
     width: 85%;
     max-width: 2000px;
     border-radius:50px;
-    /* background: url(../../assets/images/zap-background-image.jpg); */
+    background: url(../../assets/images/zap-background-image.jpg);
     background-size: cover; 
     /* border: 2px solid white; */
     cursor:crosshair;
