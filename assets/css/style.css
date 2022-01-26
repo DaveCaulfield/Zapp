@@ -70,7 +70,7 @@ body {
     width: 85%;
     max-width: 2000px;
     border-radius:50px;
-    background: url(../../assets/images/city-image.jpg);
+    background: url(../../assets/images/zap-background-image.jpg);
     background-size: cover; 
     border: 2px solid white;
     cursor:crosshair;
