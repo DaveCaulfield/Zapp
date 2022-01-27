@@ -137,6 +137,17 @@ body {
 
 /*.................about...............*/
 
+#about-spaceship{
+    height: 80px;
+    width: 120px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    background: url(../../assets/images/ufo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
 #about-game-area {
     display: flex;
     flex-direction: column;
@@ -173,7 +184,7 @@ body {
 
 #about-zap>hr {
     height: 4px;
-    width: 200px;
+    width: 100px;
     background-color: white;
 }
 
