@@ -14,45 +14,44 @@
 </head>
 <body>
 
-    <div id="score-board">
+<section id="game-scoreboard">
+    <!-- <div id="score-board"> -->
         <div id="time-display"> Timer 45sec</div>
         <div id="player-score">Crypto coins 0000 </div>
-            </div>
+            <!-- </div> -->
+</section>
 
+<section id="game-area">
+  <!-- <div id="game-area"> -->
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>
+        <div class="spaceship"></div>     
+    <!-- </div> -->
+</section>
 
-    <div id="game-area">
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        <div class="spaceship"></div>
-        
-    </div>
-
-<div id="game-buttons">
-    <a  class="button-links" href='index.html'>
-      
-            home
-        
-    </a>
+<section id="game-buttons">
+  <!-- <div id="game-buttons"> -->
+    <a  class="button-links" href='index.html'>home</a>
 
     <input id="play-btn" type="button" value="Play" onclick="playStart()" />
-</div>
+<!-- </div> -->
     
+</section>
 
+
+<section id="game-audio">
     <audio id="audio-start" src="assets/sounds/zap-game-music-cut.mp3"></audio>
     <audio id="audio-start-btn" src="assets/sounds/start-sound.mp3"></audio>
     <audio id="audio-ufo" src="assets/sounds/zap-ufo.mp3"></audio>
     <audio id="audio-crypto" src="assets/sounds/score-crypto.mp3"></audio>
     <audio id="audio-alien" src="assets/sounds/zap-alien.mp3"></audio>
     <audio id="audio-gameover" src="assets/sounds/game-over.mp3"></audio>
-    
-    
-
-    
+</section>   
  <script src="assets/js/script.js"></script>
 </body>
 </html>
