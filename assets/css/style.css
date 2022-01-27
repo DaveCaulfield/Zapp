@@ -5,8 +5,7 @@
     box-sizing: border-box;
 }
 
-html{
-  
+html {
     max-height: 100%;
 }
 
@@ -20,7 +19,6 @@ body {
     max-height: 100%;
     width: 100%;
     max-width: 100%;
-    /*border: 2px solid white;*/
 }
 
 
@@ -30,57 +28,50 @@ body {
     width: 95%;
     max-width: 800px;
     color: greenyellow;
-    }
+}
 
 
-    #time-display{
-        background-color:black;
-        color: greenyellow;
-        border-radius: 15px;
-        font-size: 1.5rem;
-        border: 2px solid black;
-        padding: 2px 2px 2px 2px;
-        /* margin-bottom: 5px; */
-        font-family: orbitron;
-        font-weight: bold;
-        flex-wrap: wrap;
-        }
-        
-        #player-score{
-            background-color:black;
-            color: greenyellow;
-            border-radius: 15px;
-            font-size: 1.5rem;
-            border: 2px solid black;
-            padding: 2px 2px 2px 2px;
-            /* margin-bottom: 5px; */
-            font-family: orbitron;
-            font-weight: bold;
-            flex-wrap: wrap;
-            }
+#time-display {
+    background-color: black;
+    color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 2px 2px 2px 2px;
+    font-family: orbitron;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
 
+#player-score {
+    background-color: black;
+    color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 2px 2px 2px 2px;
+    font-family: orbitron;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
 
 #game-area {
     display: grid;
     grid-template-columns: auto auto auto auto;
     justify-content: space-around;
     grid-template-rows: 200px;
- /* height: 0vh; */
+    /* height: 0vh; */
     height: 90%;
     width: 85%;
     max-width: 98%;
-    border-radius:50px;
+    border-radius: 50px;
     background: url(../../assets/images/zap-background-image4.jpg);
-    background-size: cover; 
+    background-size: cover;
     border: 2px solid white;
-    cursor:crosshair;
+    cursor: crosshair;
     background-position: center;
-    /* padding-top: 50px; */
-  
 }
 
 
-.spaceship{
+.spaceship {
     /* display: none; */
     height: 80px;
     width: 120px;
@@ -90,27 +81,22 @@ body {
     background: url(../../assets/images/aliens2.png);
     background-size: contain;
     background-repeat: no-repeat;
- 
-    /*  background-size: cover;
-  object-fit: contain;
-  overflow: hidden;
-  */
 }
 
-.ufo{
+.ufo {
     background: url(../../assets/images/ufo2.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
 
-#game-buttons{
+#game-buttons {
     display: flex;
     justify-content: space-around;
     width: 50%;
     max-width: 600px;
 }
 
-#about-btn{
+#about-btn {
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
@@ -120,11 +106,11 @@ body {
     font-weight: bold;
 }
 
-#about-btn:hover{
+#about-btn:hover {
     background-color: white;
 }
 
-#play-btn{
+#play-btn {
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
@@ -132,28 +118,24 @@ body {
     margin: 5px 10px;
     font-family: orbitron;
     font-weight: bold;
-    
 }
 
-#play-btn:hover{
+#play-btn:hover {
     background-color: white;
 }
 
-.invisible{
+.invisible {
     display: none;
 }
 
-.visible{
+.visible {
     display: block;
 }
 
 
-
-
-
 /*.................about...............*/
 
-#about-game-area{
+#about-game-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,41 +143,36 @@ body {
     height: 90%;
     width: 95%;
     max-width: 98%;
-    border-radius:50px;
+    border-radius: 50px;
     background: url(../../assets/images/zap-background-image.jpg);
-    background-size: cover; 
-    /* border: 2px solid white; */
-    cursor:crosshair;
+    background-size: cover;
+    cursor: crosshair;
     background-position: center;
-    /* padding-top: 50px; */
-
 }
 
-#about-zap{
+#about-zap {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height:600px;
-    max-width:800px;
+    height: 600px;
+    max-width: 800px;
     background-color: black;
-    /* border: 2px solid white; */
     border-radius: 50px;
     color: greenyellow;
     font-family: orbitron;
     letter-spacing: 2px;
     text-align: center;
-
 }
 
-#about-zap > h1 {
+#about-zap>h1 {
     font-size: 4rem;
 }
 
-#about-zap > hr{
+#about-zap>hr {
     height: 4px;
     width: 200px;
-    background-color:white;
+    background-color: white;
 }
 
 
@@ -208,112 +185,92 @@ body {
 
 /*.........media queries...............*/
 @media screen and (max-width: 1400px) {
-   
-    .spaceship{
+
+    .spaceship {
         width: 100px;
     }
-
-
-/*.........media queries...............*/
-
-@media screen and (max-width: 700px) {
-
-    #game-area {
-        grid-template-rows: 100px;
-        height:80%;
-    }
-
-.spaceship{
-    /* display: none; */
-    height: 60px;
-    width: 90px;
-    padding: 5px;
-    margin: 10px;   
 }
 
-#game-buttons{
-    max-width: 100%;
-}
+    /*.........media queries...............*/
 
+    @media screen and (max-width: 700px) {
 
+        #game-area {
+            grid-template-rows: 100px;
+            height: 80%;
+        }
 
+        .spaceship {
+            /* display: none; */
+            height: 60px;
+            width: 90px;
+            padding: 5px;
+            margin: 10px;
+        }
 
-
-/*.........media queries...............*/
-
-@media screen and (max-width: 480px) {
-    #game-area {
-        display:flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        height: 82%;
-        padding: 3px;
-        border-radius: 40px;
-        width: 96%;
+        #game-buttons {
+            max-width: 100%;
+        }
     }
 
-    #score-board {
-        display: flex;
-        justify-content: space-around;
-        height:8vh;
-        font-size: 0.8rem;
-        font-weight: normal;
-    }
+        /*.........media queries...............*/
 
-    #time-display{
-        font-size: 1.1rem;
-    }
+        @media screen and (max-width: 480px) {
+            #game-area {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                height: 82%;
+                padding: 3px;
+                border-radius: 40px;
+                width: 96%;
+            }
 
-    #player-score{
-        font-size: 1.1rem; 
-    }
+            #score-board {
+                display: flex;
+                justify-content: space-around;
+                height: 8vh;
+                font-size: 0.8rem;
+                font-weight: normal;
+            }
 
+            #time-display {
+                font-size: 1.1rem;
+            }
 
-.spaceship{
-    /* display: none; */
-    height: 60px;
-    width: 90px;
-    padding: 0px;
-    margin: 5px;
-}
+            #player-score {
+                font-size: 1.1rem;
+            }
 
-#time-display{
-width: 55%;
-}
-}
+            .spaceship {
+                /* display: none; */
+                height: 60px;
+                width: 90px;
+                padding: 0px;
+                margin: 5px;
+            }
 
-
-
-
-
-
-
-
-
-
-
-
-/*.........media queries...............*/
-
-@media screen and (max-width: 350px) {
-    #game-area {
-        height: 80%;
-        width:98%;
-        padding: 3px;
-        border-radius: 30px;
-        margin-top: 3px;
-    }
+            #time-display {
+                width: 55%;
+            }
+        }
 
 
-    #score-board{
-      font-size: 0.6rem;
-      padding-top: 1px;
-      margin-bottom: 2px;
-      
-    }
+        /*.........media queries...............*/
 
+        @media screen and (max-width: 350px) {
+            #game-area {
+                height: 80%;
+                width: 98%;
+                padding: 3px;
+                border-radius: 30px;
+                margin-top: 3px;
+            }
 
-    
+            #score-board {
+                font-size: 0.6rem;
+                padding-top: 1px;
+                margin-bottom: 2px;
 
-}
-}
+            }
+        }
