@@ -183,11 +183,19 @@ body {
     border-radius: 50px;
     color: greenyellow;
     font-family: orbitron;
+    letter-spacing: 2px;
+    text-align: center;
 
 }
 
 #about-zap > h1 {
     font-size: 4rem;
+}
+
+#about-zap > hr{
+    height: 4px;
+    width: 200px;
+    background-color:white;
 }
 
 
