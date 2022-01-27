@@ -96,7 +96,7 @@ body {
     max-width: 600px;
 }
 
-#about-btn {
+.button-links {
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
@@ -108,7 +108,7 @@ body {
     color: black;
 }
 
-#about-btn:hover {
+.button-links-btn:hover {
     background-color: white;
 }
 
