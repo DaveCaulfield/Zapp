@@ -1,13 +1,21 @@
 /*Add event listener to play button to call startGame function*/
 document.getElementById("play-btn").addEventListener("click", startGame);
 
+let loopCount = 0;
+let spaceshipVisible = false;
+let score = 0;
+let time = 45;
+
+
 /* Start Game function:
 calls the game loop function
 calls the srat timer function
 */
 function startGame() {
+  if(!loopCount){
     gameLoop();
     startTimer();
+}
 }
 
 /* Timer function:
@@ -15,7 +23,7 @@ counts down from 30.
 displays time in timer display
 */
 
-let time = 45;
+
 function startTimer (){
   time = time - 1;
   document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
@@ -37,9 +45,7 @@ wait time X to call game loop again.
 after loop count alert Game over. 
 Auto refresh after game over alert. 
 */
-let loopCount = 0;
-let spaceshipVisible = false;
-let score = 0;
+
 function gameLoop(){
     spaceshipVisible = !spaceshipVisible;
     spaceships();
