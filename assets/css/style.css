@@ -28,7 +28,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 95%;
-    max-width: 2000px;
+    max-width: 800px;
     color: greenyellow;
     }
 
@@ -68,7 +68,7 @@ body {
  /* height: 0vh; */
     height: 90%;
     width: 85%;
-    max-width: 2000px;
+    max-width: 98%;
     border-radius:50px;
     background: url(../../assets/images/zap-background-image4.jpg);
     background-size: cover; 
@@ -107,8 +107,7 @@ body {
     display: flex;
     justify-content: space-around;
     width: 50%;
-    max-width: 2000px;
-
+    max-width: 600px;
 }
 
 #about-btn{
@@ -161,7 +160,7 @@ body {
     justify-content: start;
     height: 90%;
     width: 95%;
-    max-width: 2000px;
+    max-width: 98%;
     border-radius:50px;
     background: url(../../assets/images/zap-background-image.jpg);
     background-size: cover; 
@@ -178,7 +177,7 @@ body {
     align-items: center;
     justify-content: center;
     height:600px;
-    width:800px;
+    max-width:800px;
     background-color: black;
     /* border: 2px solid white; */
     border-radius: 50px;
@@ -186,9 +185,6 @@ body {
     font-family: orbitron;
 
 }
-
-
-
 
 #about-zap > h1 {
     font-size: 4rem;
@@ -210,11 +206,12 @@ body {
     height: 60px;
     width: 90px;
     padding: 5px;
-    margin: 10px;
-    
+    margin: 10px;   
 }
 
-
+#game-buttons{
+    max-width: 100%;
+}
 
 
 
