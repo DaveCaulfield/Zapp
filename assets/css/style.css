@@ -21,6 +21,49 @@ body {
     max-width: 100%;
 }
 
+.flex-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color:greenyellow;
+    cursor: crosshair;
+    font-family: orbitron;
+    letter-spacing: 2px;
+    text-align: center;
+    margin: 20px;
+
+}
+
+#ufo-img-home{
+    height: 80px;
+    width: 120px;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    background: url(../../assets/images/ufo2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+#h1-zapp{
+    font-size: 4rem;
+}
+
+#hr-white{
+height: 4px;
+width: 100px;
+background-color: white;
+}
+
+
+
+
+
+
+
+
+
 
 #score-board {
     display: flex;
@@ -137,7 +180,7 @@ body {
 
 /*.................about...............*/
 
-#about-spaceship{
+/* #about-spaceship{
     height: 80px;
     width: 120px;
     padding: 5px;
@@ -146,9 +189,9 @@ body {
     background: url(../../assets/images/ufo2.png);
     background-size: contain;
     background-repeat: no-repeat;
-}
+} */
 
-#about-game-area {
+/* #about-game-area {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -161,9 +204,9 @@ body {
     background-size: cover;
     cursor: crosshair;
     background-position: center;
-}
+} */
 
-#about-zap {
+/* #about-zap {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -176,17 +219,17 @@ body {
     font-family: orbitron;
     letter-spacing: 2px;
     text-align: center;
-}
+} */
 
-#about-zap>h1 {
+/* #about-zap>h1 {
     font-size: 4rem;
-}
+} */
 
-#about-zap>hr {
+/* #about-zap>hr {
     height: 4px;
     width: 100px;
     background-color: white;
-}
+} */
 
 
 
