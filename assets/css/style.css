@@ -283,7 +283,6 @@ body {
     #time-display {
         width: 55%;
     }
-}
 
 #reset-btn {
     font-size: 1rem;
@@ -294,6 +293,8 @@ body {
 }
 .button-links{
     font-size: 1rem; 
+}
+
 }
 
 /*.........media queries...............*/
