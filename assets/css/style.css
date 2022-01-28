@@ -132,7 +132,7 @@ body {
 .game-buttons {
     display: flex;
     justify-content: space-around;
-    width: 50%;
+    width: 100%;
     max-width: 600px;
 }
 
@@ -152,19 +152,6 @@ body {
     background-color: white;
 }
 
-#reset-btn{
-    background-color: greenyellow;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    padding: 3px 10px 3px 10px;
-    margin: 5px 10px;
-    font-family: orbitron;
-    font-weight: bold;  
-}
-
-#reset-btn:hover{
-    background-color: white;
-}
 
 #play-btn {
     background-color: greenyellow;
@@ -180,7 +167,38 @@ body {
     background-color: white;
 }
 
+#audio-off {
+    font-size: 2rem;
+  color: greenyellow;
+  padding:10px;
+}
+#audio-off:hover {
+    color: white;
+}
 
+#audio-on{
+    font-size: 2rem;
+  color: greenyellow;
+  padding:10px;
+}
+#audio-on:hover {
+    color: white;
+}
+
+
+#reset-btn{
+    background-color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    font-family: orbitron;
+    font-weight: bold;  
+}
+
+#reset-btn:hover{
+    background-color: white;
+}
 
 /*.......css javascript classes . . . .*/
 
