@@ -31,7 +31,7 @@ body {
     justify-content: center;
     color: greenyellow;
     cursor: crosshair;
-    font-family: orbitron;
+    font-family: orbitron, verdana;
     letter-spacing: 2px;
     text-align: center;
     margin: 20px;
@@ -79,7 +79,7 @@ body {
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 2px 2px 2px 2px;
-    font-family: orbitron;
+    font-family: orbitron, verdana;
     font-weight: bold;
     flex-wrap: wrap;
 }
@@ -90,7 +90,7 @@ body {
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 2px 2px 2px 2px;
-    font-family: orbitron;
+    font-family: orbitron, verdana;
     font-weight: bold;
     flex-wrap: wrap;
 }
@@ -142,7 +142,7 @@ body {
     font-size: 1.5rem;
     padding: 3px 10px 3px 10px;
     margin: 5px 10px;
-    font-family: orbitron;
+    font-family: orbitron, verdana;
     font-weight: bold;
     text-decoration: none;
     color: black;
@@ -158,7 +158,7 @@ body {
     font-size: 1.5rem;
     padding: 3px 10px 3px 10px;
     margin: 5px 10px;
-    font-family: orbitron;
+    font-family: orbitron, verdana;
     font-weight: bold;
 }
 
