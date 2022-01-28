@@ -4,6 +4,7 @@ document.getElementById("play-btn").addEventListener("click", startGame);
 document.getElementById("reset-btn").addEventListener("click", refreshGame);
 document.getElementById("audio-off").addEventListener("click", enableMute);
 document.getElementById("audio-on").addEventListener("click", disableMute);
+document.getElementById("home-btn").addEventListener("click", returnHome);
 
 
 /* ......................Variables.......................*/

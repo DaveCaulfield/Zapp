@@ -153,6 +153,21 @@ body {
 }
 
 
+#home-btn{
+    background-color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    font-family: orbitron, verdana;
+    font-weight: bold;
+}
+
+#home-btn:hover {
+    background-color: white;
+}
+
+
 #play-btn {
     background-color: greenyellow;
     border-radius: 15px;
@@ -169,34 +184,36 @@ body {
 
 #audio-off {
     font-size: 2rem;
-  color: greenyellow;
-  padding:10px;
+    color: greenyellow;
+    padding: 10px;
 }
+
 #audio-off:hover {
     color: white;
 }
 
-#audio-on{
+#audio-on {
     font-size: 2rem;
-  color: greenyellow;
-  padding:10px;
+    color: greenyellow;
+    padding: 10px;
 }
+
 #audio-on:hover {
     color: white;
 }
 
 
-#reset-btn{
+#reset-btn {
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
     padding: 3px 10px 3px 10px;
     margin: 5px 10px;
     font-family: orbitron;
-    font-weight: bold;  
+    font-weight: bold;
 }
 
-#reset-btn:hover{
+#reset-btn:hover {
     background-color: white;
 }
 
@@ -284,16 +301,21 @@ body {
         width: 55%;
     }
 
-#reset-btn {
-    font-size: 1rem;
-}
+    #home-btn {
+        font-size: 1rem;
+    }
 
-#play-btn {
-    font-size: 1rem; 
-}
-.button-links{
-    font-size: 1rem; 
-}
+    #reset-btn {
+        font-size: 1rem;
+    }
+
+    #play-btn {
+        font-size: 1rem;
+    }
+
+    .button-links {
+        font-size: 1rem;
+    }
 
 }
 
@@ -315,22 +337,22 @@ body {
     }
 
 
-#game-buttons{
-    display: inline-block;
-}
-
-#audio-on {
-font-size: 1rem;
-}
-
-#audio-off {
-    font-size: 1rem;
+    #game-buttons {
+        display: inline-block;
     }
 
-    #reset-btn{
+    #audio-on {
+        font-size: 1rem;
+    }
+
+    #audio-off {
+        font-size: 1rem;
+    }
+
+    #reset-btn {
         margin: 0px;
-        padding:2px 6px 2px 6px;
+        padding: 2px 6px 2px 6px;
     }
 
-    
+
 }
