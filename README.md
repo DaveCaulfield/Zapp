@@ -11,3 +11,27 @@ Enjoy [zapp](https://davecaulfield.github.io/zapp/)
 
 ## Wireframes
 - TO BE ADDED
+
+
+[Back to top](#zapp)
+
+## Site Structure
+The zapp web app game has two pages, a landing  [home](index.html) page to greet the user and a [game](game.html) page to play the game.
+
+[Back to top](#zapp)
+
+## Design Choices
+
+### Typography
+The fonts used are Orbitron with a fallback of verdana.
+   *  The Orbitron font gives the game both an old sci-fi spacecraft style and a retro arcade game style.
+   
+### Colour scheme
+   * The colour scheme used is black (#000000) for the background and greenyellow (#ADFF2F) for text. A contrasting warm orange and brown graphic is used for the background to the game page.
+   * The black background of the landing page gives a premium feel to the site. It helps immediatley convey the theme of the game being set in space to the user. Black is also used to frame the game on the game page and mimics an old Arcade game screen adding to the users experience. 
+   * The greenyellow colour used for the text helps create the sci-fi spaceship retro arcade game style. The colour stands out on the black background an is clearly readible to the user throughout the site.
+   * The warm orange and brown graphic used as the background to the game area also contrasts with the black frame and gives a warm welcoming feeling to the user.
+
+
+[Back to top](#zapp)
+
