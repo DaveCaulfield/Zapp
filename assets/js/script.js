@@ -1,10 +1,12 @@
-/*Add event listeners*/
+/*......................Add event listeners ...............*/
+
 document.getElementById("play-btn").addEventListener("click", startGame);
 document.getElementById("reset-btn").addEventListener("click", refreshGame);
 document.getElementById("audio-off").addEventListener("click", enableMute);
 document.getElementById("audio-on").addEventListener("click", disableMute);
 
-/* Variables*/
+
+/* ......................Variables.......................*/
 let loopCount = 0;
 let spaceshipVisible = false;
 let score = 0;
@@ -73,14 +75,12 @@ retrieve the game area div and store it as spaceShips variable.
 set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
 loop through the child divs for every i less than 8.   
 set class.
-set the child divs innerHTML to "Alien".
 set the decrement score onclick feature.
 send the score to update the scoreboard.
 call the playAliensound feature when clicked
 create a random number between 1-8
 (use random-1 to translate 1-8 into index count 0-7)
 add .ufo class to apply ufo image.
-set the child divs innerHTML to "Rogue UFO"
 set onclick feature to increment score.
 send the score to update the scoreboard.
 call the playUfoSound feature when ufo clicked
@@ -125,6 +125,7 @@ function disableMute() {
 
 
 /* ......................Reset Game featuree.......................*/
+
 function refreshGame() {
   window.location.reload();
 }
