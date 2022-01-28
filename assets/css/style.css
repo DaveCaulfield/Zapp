@@ -185,7 +185,7 @@ body {
 #audio-off {
     font-size: 2rem;
     color: greenyellow;
-    padding: 10px;
+    padding-right: 15px;
 }
 
 #audio-off:hover {
@@ -195,7 +195,7 @@ body {
 #audio-on {
     font-size: 2rem;
     color: greenyellow;
-    padding: 10px;
+    padding-top: 5px;
 }
 
 #audio-on:hover {
@@ -342,16 +342,11 @@ body {
     }
 
     #audio-on {
-        font-size: 1rem;
+        font-size: 1.1rem;
     }
 
     #audio-off {
-        font-size: 1rem;
-    }
-
-    #reset-btn {
-        margin: 0px;
-        padding: 2px 6px 2px 6px;
+        font-size: 1.1rem;
     }
 
 
