@@ -110,6 +110,9 @@ function spaceships() {
 }
 
 
+
+
+
 /* ......................Audio mute features.......................*/
 
 function enableMute() {
@@ -124,11 +127,15 @@ function disableMute() {
   music.muted = false;
 }
 
-
 /* ......................Reset Game featuree.......................*/
 
 function refreshGame() {
   window.location.reload();
+}
+
+/* ......................Return homepage.......................*/
+function returnHome(){
+  document.location.href = ('index.html');
 }
 
 
