@@ -1,10 +1,23 @@
 /*Add event listener to play button to call startGame function*/
 document.getElementById("play-btn").addEventListener("click", startGame);
 
+/*Add event listener to play button to call startGame function*/
+document.getElementById("reset-btn").addEventListener("click", refreshGame);
+
+
+
 let loopCount = 0;
 let spaceshipVisible = false;
 let score = 0;
 let time = 45;
+
+
+/*reset game function */
+function refreshGame () {
+  window.location.reload();
+}
+
+
 
 
 /* Start Game function:

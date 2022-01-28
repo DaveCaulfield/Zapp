@@ -152,6 +152,20 @@ body {
     background-color: white;
 }
 
+#reset-btn{
+    background-color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    font-family: orbitron;
+    font-weight: bold;  
+}
+
+#reset-btn:hover{
+    background-color: white;
+}
+
 #play-btn {
     background-color: greenyellow;
     border-radius: 15px;
