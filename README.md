@@ -50,4 +50,52 @@ The zapp game is designed to be a fun game to play. It is designed to be as intu
 
    ![landing page](docs/readme-images/zapp-landing-page-img.png)
 
+[Back to top](#zapp)
 
+### The Timer
+ - The timer displays the amount of time the user has in the game. 
+ - It displays the count down in seconds as it counts down from a starting time of 45 seconds. 
+ - It is immediatley clear to the user how much time they have when starting the game and also their remaining time throughout the game.
+
+   ![Timer](docs/readme-images/zapp-timer.png)
+
+[Back to top](#zapp)
+
+### The scoreboard 
+- The scoreboard displays the users score in crypto coins.
+- It is clearly visible as the user plays the game.
+- The score increments by 1000 coins when the user successfuuly zaps the UFO.
+- The score decrements by 1000 coins if the user zaps an alien.
+
+![Timer](docs/readme-images/zapp-score-board.png)
+
+[Back to top](#zapp)
+
+### The game area
+- The background graphic of the game area cosists of a warm orange and brown animation of a city skyline with larger futuristic skycraper tower.
+- The colours are fun, warm and welcoming to the user.
+- The game area is framed to look like an arcade game screen to enhance the user experience.
+- The friendly alien characters are shown in their spaceships.
+- The alien spaceships flash on and off the screen.
+- The target UFO also flashes on and off the screen and takes a random position everytime.
+- The game area images supprt the theme of fun to the user.
+
+
+![Game Area](docs/readme-images/zapp-game-area.png)
+
+[Back to top](#zapp)
+
+### The game area buttons
+- The buttons under tha game area keep the style consistent for the user.
+- The Home button brings the user back to the landing page.
+- The Start button allows the user to starts the game.
+- Both buttons background colour change to white when hovered on.
+
+![Game Area Buttons](docs/readme-images/zapp-game-area-buttons.png)
+
+[Back to top](#zapp)
+
+### Audio
+- Game theme music plays when the user starts a game.
+- Sound effects play when the user zaps the UFO. This feature indicates to the user that they have successfully zapped the UFO and their score has incremented.
+- A different sound effect plays if the user zaps an alien. This feature indicates to the user their score has decremented.
