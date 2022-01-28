@@ -107,4 +107,46 @@ The zapp game is designed to be a fun game to play. It is designed to be as intu
 ## Future Features
   - A Multi level feature where the player has to score a certain amount of points to progress to the next level.
   - Different graphics on each level.
+
+[Back to top](#zapp)
+
+
+  # Technologies Used
+
+  - [HTML](https://html.spec.whatwg.org/) was used to structure the website.
+  - [CSS](https://www.w3.org/Style/CSS/Overview.en.html) was used to style the website.
+  - [Javascript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) was used to run the game.
+  - [Gitpod](https://www.gitpod.io/#get-started) was used to create and edit the website files.
+  - [Github](https://github.com/) was used to host and deploy the website.
+
+[Back to top](#zapp)
+
+
+# Testing
+
+Please see the [testing](testing.md) page for details of MKG North Dublin website testing. 
+
+ [Back to top](#zapp) 
+
+
+# Deployment
+
+
+
+
+  # Credits
+
+ ## Content
+ - The font came from [GoogleFonts](https://fonts.google.com/)
+ - The background image for the game area came from [Max Pixel](https://www.maxpixel.net//)
+ - The images for the UFO and aliens came from [Pixabay](https://pixabay.com/)
+ - images were compressed using [Compressor](https://compressor.io/) and [Tinypng](https://tinypng.com/)
+ - The idea and code structure for the flashing elements came from kids coding book [getcoding](https://getcodingkids.com/)
+ - The mp3 audio files came from [Zapsplat](https://www.zapsplat.com/)
   
+ [Back to top](#zapp)
+
+
+  # Acknowledgements
+
+   The zapp game was built as my Portfolio 2 Project for the Full Stack Software Developer (e-Commerce) Diploma at the [Code Institute](https://codeinstitute.net/ie/). I would like to thank my cohort facilitator [Kasia Bogucka](https://github.com/bezebee), my mentor [Precious Leige](https://www.linkedin.com/in/precious-ijege-908a00168/), the Slack community particulary Gregg Commins and all at the Code institute for the help and support provided to me throughout this project. 
