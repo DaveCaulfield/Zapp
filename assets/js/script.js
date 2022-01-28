@@ -4,19 +4,15 @@ document.getElementById("play-btn").addEventListener("click", startGame);
 /*Add event listener to play button to call startGame function*/
 document.getElementById("reset-btn").addEventListener("click", refreshGame);
 
+document.getElementById("audio-off").addEventListener("click", enableMute);
+document.getElementById("audio-on").addEventListener("click", disableMute);
 
 
 let loopCount = 0;
 let spaceshipVisible = false;
 let score = 0;
 let time = 45;
-
-
-/*reset game function */
-function refreshGame () {
-  window.location.reload();
-}
-
+let music = document.getElementById("audio-start"); 
 
 
 
@@ -30,6 +26,34 @@ function startGame() {
     startTimer();
 }
 }
+
+
+
+function enableMute() {
+  // let music = document.querySelectorAll("#audio-start");
+ 
+  // let music = document.querySelectorAll("sound-effects");
+  // let music= [document.getElementsByClassName("sound-effects")];
+  // let music = document.getElementsByTagName("audio");
+  music.muted = true;
+} 
+
+function disableMute() { 
+music.muted = false;
+} 
+
+
+
+
+/*reset game function */
+function refreshGame () {
+  window.location.reload();
+}
+
+
+
+
+
 
 /* Timer function:
 counts down from 30.
