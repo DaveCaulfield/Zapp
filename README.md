@@ -96,6 +96,15 @@ The zapp game is designed to be a fun game to play. It is designed to be as intu
 [Back to top](#zapp)
 
 ### Audio
-- Game theme music plays when the user starts a game.
+- Game theme music plays when the user starts a game. 
 - Sound effects play when the user zaps the UFO. This feature indicates to the user that they have successfully zapped the UFO and their score has incremented.
 - A different sound effect plays if the user zaps an alien. This feature indicates to the user their score has decremented.
+- The sounds of arcade game music and various interactive sound effects enhance the experience for the user.
+
+[Back to top](#zapp)
+
+
+## Future Features
+  - A Multi level feature where the player has to score a certain amount of points to progress to the next level.
+  - Different graphics on each level.
+  
