@@ -14,4 +14,7 @@ Testing ensured that the zapp game appearance, responsiveness and funcionality w
 ![screen shot html validation](/docs/readme-images/homepage-html-validator.png)
 
 
+![screen css validation](/docs/readme-images/css-validator.png)
+
+
 
