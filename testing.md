@@ -71,3 +71,25 @@ Back to [README.md](README.md)
 - Applying this code worked and the game runs one full game loop at a time despite multiple presses of the play button. 
 - The concept of testing for and defending an issue like this came from a Dave Horricks webinar at Code Institute.
 - The fix came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
+
+
+
+## Unresolved
+- Sound effects not muted
+
+
+    Back to [README.md](README.md)
+
+
+    ## Lighthouse
+- [lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test the site for performance, accessibility, best bractices and SEO.
+
+    - Performance - How fast it takes a webpage to load.
+    - Accessibility - How accessible a website is (users might need a screen reader).
+    - Best Practices - How the site conforms to coding best practices.
+    - SEO - Search engine optimisation. How optimised the site is for search engine results.
+
+
+![Lighthouse screen shot](/docs/readme-images/lighthouse.png)
+
+Back to [README.md](README.md)
