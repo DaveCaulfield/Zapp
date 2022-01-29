@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,17 +14,18 @@
 
     <title>Zapp</title>
 </head>
+
 <body>
 
-<section id="game-scoreboard">
-    <!-- <div id="score-board"> -->
+    <section id="game-scoreboard">
+        <!-- <div id="score-board"> -->
         <div id="time-display"> Timer 45sec</div>
         <div id="player-score">Crypto coins 0000 </div>
-            <!-- </div> -->
-</section>
+        <!-- </div> -->
+    </section>
 
-<section id="game-area">
-  <!-- <div id="game-area"> -->
+    <section id="game-area">
+        <!-- <div id="game-area"> -->
         <div class="spaceship"></div>
         <div class="spaceship"></div>
         <div class="spaceship"></div>
@@ -31,35 +33,32 @@
         <div class="spaceship"></div>
         <div class="spaceship"></div>
         <div class="spaceship"></div>
-        <div class="spaceship"></div>     
-    <!-- </div> -->
-</section>
+        <div class="spaceship"></div>
+        <!-- </div> -->
+    </section>
 
-<section class="game-buttons">
-  <!-- <div id="game-buttons"> -->
-    <!-- <a  class="button-links" href='index.html'>home</a> -->
+    <section class="game-buttons">
 
-    <input id="home-btn" type="button" value="Home" onclick="returnHome()" />
-    <input id="play-btn" type="button" value="Play" onclick="playStart()" />
-    <div>
-        <i id ="audio-off" class="fa fa-volume-mute" onclick="enableMute()"></i>
-        <i id ="audio-on" class="fas fa-volume-up"></i>
-    </div>
-    <input id="reset-btn" type="button" value="Reset" onclick="refreshGame()" />
-    
-<!-- </div> -->
-    
-</section>
+        <input id="home-btn" type="button" value="Home" onclick="returnHome()" />
+        <input id="play-btn" type="button" value="Play" onclick="playStart()" />
+        <div>
+            <i id="audio-off" class="fa fa-volume-mute" onclick="enableMute()"></i>
+            <i id="audio-on" class="fas fa-volume-up"></i>
+        </div>
+        <input id="reset-btn" type="button" value="Reset" onclick="refreshGame()" />
+
+    </section>
 
 
-<section id="game-audio">
-    <audio id="audio-start" src="assets/sounds/zap-game-music-cut.mp3"></audio>
-    <audio id="audio-start-btn" src="assets/sounds/start-sound.mp3"></audio>
-    <audio id="audio-ufo" src="assets/sounds/zap-ufo.mp3"></audio>
-    <audio id="audio-crypto" src="assets/sounds/score-crypto.mp3"></audio>
-    <audio id="audio-alien" src="assets/sounds/zap-alien.mp3"></audio>
-    <audio id="audio-gameover" src="assets/sounds/game-over.mp3"></audio>
-</section>   
- <script src="assets/js/script.js"></script>
+    <section id="game-audio">
+        <audio id="audio-start" src="assets/sounds/zap-game-music-cut.mp3"></audio>
+        <audio id="audio-start-btn" src="assets/sounds/start-sound.mp3"></audio>
+        <audio id="audio-ufo" src="assets/sounds/zap-ufo.mp3"></audio>
+        <audio id="audio-crypto" src="assets/sounds/score-crypto.mp3"></audio>
+        <audio id="audio-alien" src="assets/sounds/zap-alien.mp3"></audio>
+        <audio id="audio-gameover" src="assets/sounds/game-over.mp3"></audio>
+    </section>
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>

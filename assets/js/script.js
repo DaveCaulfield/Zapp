@@ -134,7 +134,7 @@ function refreshGame() {
 }
 
 /* ......................Return homepage.......................*/
-function returnHome(){
+function returnHome() {
   document.location.href = ('index.html');
 }
 
