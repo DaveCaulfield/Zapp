@@ -4,7 +4,7 @@ zapp is a free online game. The game is designed to be an easy to use and fun ga
 
 Enjoy [zapp](https://davecaulfield.github.io/zapp/)
 
-![landing page](docs/readme-images/zapp-responsive-img.png)
+![landing page](docs/readme-images/responsive-screenshot.png)
 
 # User Experience (UX)
 - The user experience (UX) and user interface (UI) was considered from the start of the design process. The game aims to give the user an enjoyable experience whilst easily and intuitively navigating and playing the game on mobile, tablet, laptop or desktop devices.
@@ -81,17 +81,20 @@ The zapp game is designed to be a fun game to play. It is designed to be as intu
 - The game area images supprt the theme of fun to the user.
 
 
-![Game Area](docs/readme-images/zapp-game-area.png)
+![Game Area](docs/readme-images/zapp-game-fullscreen.png)
 
 [Back to top](#zapp)
 
 ### The game area buttons
-- The buttons under tha game area keep the style consistent for the user.
+- The buttons under the game area keep the style consistent for the user.
 - The Home button brings the user back to the landing page.
-- The Start button allows the user to starts the game.
-- Both buttons background colour change to white when hovered on.
+- The Play button allows the user to start the game.
+- Audios icons allow the user to turn the music off and on.
+- The reset button allows the user to restart during a game.
+- All buttons and icons change background colour to white when hovered on.
+- All buttons and icons are clear and easily understood by the user makng it an intuitive experience.
 
-![Game Area Buttons](docs/readme-images/zapp-game-area-buttons.png)
+![Game Area Buttons](docs/readme-images/zapp-game-buttons.png)
 
 [Back to top](#zapp)
 
