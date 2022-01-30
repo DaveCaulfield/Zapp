@@ -112,25 +112,6 @@ function spaceships() {
 }
 
 
-
-
-
-/* ......................Audio mute feature.......................*/
-
-function enableMute() {
-  // let music = document.querySelectorAll("#audio-start");
-  // let music = document.querySelectorAll("sound-effects");
-  // let music= [document.getElementsByClassName("sound-effects")];
-  // let music = document.getElementsByTagName("audio");
-  music.muted = true;
-}
-
-/* ......................Audio unmute feature.......................*/
-
-function disableMute() {
-  music.muted = false;
-}
-
 /* ......................Reset Game feature.......................*/
 
 function refreshGame() {
@@ -174,4 +155,24 @@ function playAlienSound() {
 function playGameOver() {
   let audioGameOver = new Audio("assets/sounds/game-over.mp3");
   audioGameOver.play();
+}
+
+/* ......................Audio mute feature.......................*/
+function enableMute() {
+  audioGameMusic.muted = true;
+  startBtn.muted = true; 
+  audioUfo.muted = true;
+  audioCrypto.muted = true;
+  audioAlien.muted = true;
+  audioGameOver.muted = true;
+}
+
+/* ......................Audio unmute feature.......................*/
+function disableMute() {
+  audioGameMusic.muted = false;
+  startBtn.muted = false;
+  audioUfo.muted = false;
+  audioCrypto.muted = false;
+  audioAlien.muted = false;
+  audioGameOver.muted = false;
 }
