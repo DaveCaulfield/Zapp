@@ -58,6 +58,22 @@ body {
     background-color: white;
 }
 
+#enter-link {
+    background-color: greenyellow;
+    border-radius: 15px;
+    font-size: 1.5rem;
+    padding: 3px 10px 3px 10px;
+    margin: 5px 10px;
+    font-family: orbitron, verdana;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+#enter-link:hover {
+    background-color: white;
+}
+
 
 
 
@@ -136,17 +152,7 @@ body {
     max-width: 600px;
 }
 
-#enter-link {
-    background-color: greenyellow;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    padding: 3px 10px 3px 10px;
-    margin: 5px 10px;
-    font-family: orbitron, verdana;
-    font-weight: bold;
-    text-decoration: none;
-    color: black;
-}
+
 
 .game-buttons a:hover {
     background-color: white;
