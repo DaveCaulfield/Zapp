@@ -72,7 +72,7 @@ Back to [README.md](README.md)
 - Applying this code worked and the game runs one full game loop at a time despite multiple presses of the play button. 
 - The concept of testing for and defending an issue like this came from Dave Horrocks webinar at Code Institute.
 - The solution came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
-
+## Resolved
 - Testing also highlighted that the audio mute feature muted the game music that plays during the game but not the sound effects.
 - The code was revisited and ammended to include all audio sound effects in the mute feature.
 - This improves the game experience for the user.
