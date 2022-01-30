@@ -137,24 +137,54 @@ Please see the [testing](testing.md) page for details of MKG North Dublin websit
 # Deployment
 
  ## To deploy the site
- - The site was deployed to GitHub pages. The steps to deploy are as follows:
+ The site was deployed to GitHub pages. The steps to deploy are as follows:
 
  1. In the Github repository select the **Settings** tab.
 
   ![screen shot of github deployment](docs/readme-images/deploy1.png)
 
+
  2. Select the **pages** tab on the left of screen.
 
   ![screen shot of github deployment](docs/readme-images/deploy2.png)
+
 
  3. In the **source** section select the branch drop down and set to **main**, then click **save**.
 
   ![screen shot of github deployment](docs/readme-images/deploy3.png)
 
+
 4. Once you select save the page will refresh and a link to the published site will be displayed.   
 
   ![screen shot of github deployment](docs/readme-images/deploy4.png)
 
+
+
+  ## To fork the repository on Github
+
+A fork is a copy of a repository. Forking a repository allows you to freely experiment with changes without affecting the original project.
+
+1. In the Github repository select the **fork** button on the top right of screen. This will create a copy of the original repository to your github account.
+
+
+![screen shot of github deployment](docs/readme-images/fork.png)
+
+
+## To clone the repository
+
+Cloning the repository creates a local copy on your computer.
+
+1. In the Github repository select the **code** tab.
+2. In the **clone https** section select the clipboard icon.
+
+![screen shot of github clone](docs/readme-images/clone.png)
+
+3. Open **Git Bash** terminal in your IDE.
+4. Create or go to the directory for the cloned repository.
+5. Enter command **git clone** and paste the URL copied from GitHub.
+6. Press **enter** and the local clone will be created.
+
+ [Back to top](#zapp) 
 
 
 
