@@ -25,6 +25,7 @@ function startGame() {
   if (!loopCount) {
     gameLoop();
     startTimer();
+    playStart();
   }
 }
 
