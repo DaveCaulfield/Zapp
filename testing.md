@@ -1,15 +1,15 @@
 # Testing
-Testing ensured that the zapp game appearance, responsiveness and funcionality worked as expected. It ensures that the user experience is enjoyable whilst using mobile, tablet laptop or desktop device and their browser of choice.
+Testing ensured that the zapp game appearance, responsiveness and funcionality worked as expected. It ensured that the user experience is enjoyable whilst using mobile, tablet, laptop or desktop device and their browser of choice.
 
 ## Code Vaildation
-- The code for the zapp game has been tested using [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JShint}](https://jshint.com/).
+- The code for the zapp game has been tested using [W3C HTML Validator](https://validator.w3.org/), [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) and [JShint](https://jshint.com/).
 -  There were some minor fixes required after validator testing.
-- HTML validator returned warnings regargding sections lack headings.
+- HTML validator returned warnings advising sections lack headings.
 
 ![screen shot html warnings](/docs/readme-images/homepage-html-warnings.png)
 
 
-- This was corrected by using divs as there were no headings to be used in these sections. 
+- This was corrected by using divs as there were no headings to be used in these sections of the game. 
 
 ![screen shot html validation](/docs/readme-images/homepage-html-validator.png)
 
@@ -29,8 +29,8 @@ Testing ensured that the zapp game appearance, responsiveness and funcionality w
 - Responsivness was tested using [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive design checker](https://responsivedesignchecker.com/). 
     - Devices tested using these tools were Moto G4, Galaxy S5, iPhone5, iPhone6/7 iPad, iPad pro,Display <1200px, Display >1200px
     - Media queries were added to ensure responsiveness for smalll screens. 
-    - Max width was set to ensure site displayed ok on extra large screen.
-    - After adding media queries the site was found to be responsive for mobile, tabllet, laptop and desktop screens.
+    - Max width was set to ensure site displayed ok on extra large screen and prevent overflow on small screens.
+    - After adding media queries the site was found to be responsive for mobile, tablet, laptop and desktop screens.
 
 
 ![respnsive large screen ](/docs/readme-images/responsive-large.png)
@@ -71,7 +71,7 @@ Back to [README.md](README.md)
 - The issue was researched and an if statement was applied to the startGame function to only run if there was not a loopcount already running.
 - Applying this code worked and the game runs one full game loop at a time despite multiple presses of the play button. 
 - The concept of testing for and defending an issue like this came from Dave Horrocks webinar at Code Institute.
-- The fix came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
+- The solution came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
 
 
 
