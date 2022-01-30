@@ -29,8 +29,8 @@ The fonts used are Orbitron with a fallback of verdana.
    
 ### Colour scheme
    * The colour scheme used is black (#000000) for the background and greenyellow (#ADFF2F) for text. A contrasting warm orange and brown graphic is used for the background to the game page.
-   * The black background of the landing page gives a premium feel to the site. It immediatley helps convey the theme of the game being set in space to the user. 
-   * Black is also used to frame the game on the game page and mimics an old Arcade game screen adding to the users experience. 
+   * The black background of the landing page gives a premium feel to the site. It immediatley helps convey the theme of the game being set in space and involving a ufo to the user. 
+   * Black is also used to frame the game on the game page and mimics an old Arcade game screen adding to the user experience. 
    * The greenyellow colour used for the text helps create the sci-fi spaceship retro arcade game style. The colour stands out on the black background an is clearly readible to the user throughout the site.
    * The warm orange and brown graphic used as the background to the game area also contrasts with the black frame and gives a warm welcoming feeling to the user.
 
@@ -38,7 +38,7 @@ The fonts used are Orbitron with a fallback of verdana.
 
 # Features
 
-The zapp game is designed to be a fun game to play for all ages. It is designed to be as intuitive as as possible for the user in both navigating and playing the game. The theme is that of an classic shoot `em up video arcade game set in space and aims to bring the look, feel and sounds of a classic arcade game to the user.
+The zapp game is designed to be a fun game to play for all ages. It is designed to be as intuitive as as possible for the user in both navigating and playing the game. The theme is that of a classic shoot `em up video arcade game set in space and aims to bring the look, feel and sounds of a classic arcade game to the user.
 
 ## Existing Features
 
@@ -65,7 +65,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 ### The scoreboard 
 - The scoreboard displays the users score in crypto coins.
 - It is clearly visible as the user plays the game.
-- The score increments by 1000 coins when the user successfuuly zaps the UFO.
+- The score increments by 1000 coins when the user successfuly zaps the UFO.
 - The score decrements by 1000 coins if the user zaps an alien.
 - The use of crypto coins as a measure of score and the high numbers involved adds fun to the user experience.
 
@@ -91,7 +91,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 - The buttons under the game area keep the style consistent for the user.
 - The Home button brings the user back to the landing page.
 - The Play button allows the user to start the game.
-- Audios icons allow the user to turn the music off and on.
+- Audio icons allow the user to turn the music off and on.
 - The reset button allows the user to reset the game at any point.
 - All buttons and icons change background colour to white when hovered on.
 - All buttons and icons are clear and easily understood by the user makng it an immediately intuitive experience.
@@ -105,6 +105,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 - Sound effects play when the user zaps the UFO. This feature indicates to the user that they have successfully zapped the UFO and their score has incremented.
 - A different sound effect plays if the user zaps an alien. This feature indicates to the user their score has decremented.
 - The sounds of arcade game music and various interactive sound effects enhance the experience for the user.
+- The user can easily mute the music from the game page.
 
 [Back to top](#zapp)
 
@@ -120,7 +121,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 
   - [HTML](https://html.spec.whatwg.org/) was used to structure the website.
   - [CSS](https://www.w3.org/Style/CSS/Overview.en.html) was used to style the website.
-  - [Javascript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) was used to run the game.
+  - [Javascript](https://www.ecma-international.org/publications-and-standards/standards/ecma-262/) was used to run the game and provide the interactive features.
   - [Gitpod](https://www.gitpod.io/#get-started) was used to create and edit the website files.
   - [Github](https://github.com/) was used to host and deploy the website.
 
@@ -129,7 +130,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 
 # Testing
 
-Please see the [testing](testing.md) page for details of MKG North Dublin website testing. 
+Please see the [testing](testing.md) page for details of the zapp game testing. 
 
  [Back to top](#zapp) 
 
@@ -141,22 +142,22 @@ Please see the [testing](testing.md) page for details of MKG North Dublin websit
 
  1. In the Github repository select the **Settings** tab.
 
-  ![screen shot of github deployment](docs/readme-images/deploy1.png)
+      ![screen shot of github deployment](docs/readme-images/deploy1.png)
 
 
  2. Select the **pages** tab on the left of screen.
 
-  ![screen shot of github deployment](docs/readme-images/deploy2.png)
+      ![screen shot of github deployment](docs/readme-images/deploy2.png)
 
 
  3. In the **source** section select the branch drop down and set to **main**, then click **save**.
 
-  ![screen shot of github deployment](docs/readme-images/deploy3.png)
+      ![screen shot of github deployment](docs/readme-images/deploy3.png)
 
 
 4. Once you select save the page will refresh and a link to the published site will be displayed.   
 
-  ![screen shot of github deployment](docs/readme-images/deploy4.png)
+      ![screen shot of github deployment](docs/readme-images/deploy4.png)
 
 
 
