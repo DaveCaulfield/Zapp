@@ -12,7 +12,7 @@ let loopCount = 0;
 let spaceshipVisible = false;
 let score = 0;
 let time = 45;
-let music = document.getElementById("audio-start");
+
 
 
 /* ......................Start Game.......................*/
@@ -146,30 +146,32 @@ function returnHome() {
 
 /* ......................Sound effects.......................*/
 
-/* sound effect for game over*/
-function playGameOver() {
-  let audioGameOver = document.getElementById("audio-gameover");
-  audioGameOver.play();
-}
+let audioGameMusic = new Audio("assets/sounds/zap-game-music-cut.mp3");
+let startBtn = new Audio("assets/sounds/start-sound.mp3");
+let audioUfo = new Audio("assets/sounds/zap-ufo.mp3");
+let audioCrypto = new Audio("assets/sounds/score-crypto.mp3");
+let audioAlien = new Audio("assets/sounds/zap-alien.mp3");
+let audioGameOver = new Audio("assets/sounds/game-over.mp3");
 
-/* sound effect for play button*/
+//sound effect for play button
 function playStart() {
-  let audioStart = document.getElementById("audio-start");
-  let startBtn = document.getElementById("audio-start-btn");
-  audioStart.play();
+  audioGameMusic.play();
   startBtn.play();
 }
 
-/* sound effect for zapping ufo*/
+//sound effect for zapping ufo
 function playUfoSound() {
-  let audioUfo = document.getElementById("audio-ufo");
-  let crypto = document.getElementById("audio-crypto");
   audioUfo.play();
-  crypto.play();
+  audioCrypto.play();
 }
 
-/* sound effect for zapping Alien*/
+//sound effect for zapping Alien
 function playAlienSound() {
-  let audioAlien = document.getElementById("audio-alien");
   audioAlien.play();
+}
+
+//sound effect for game over
+function playGameOver() {
+  let audioGameOver = new Audio("assets/sounds/game-over.mp3");
+  audioGameOver.play();
 }
