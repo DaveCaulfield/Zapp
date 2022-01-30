@@ -6,13 +6,11 @@ document.getElementById("audio-off").addEventListener("click", enableMute);
 document.getElementById("audio-on").addEventListener("click", disableMute);
 document.getElementById("home-btn").addEventListener("click", returnHome);
 
-
 /* ......................Variables.......................*/
 let loopCount = 0;
 let spaceshipVisible = false;
 let score = 0;
 let time = 45;
-
 
 
 /* ......................Start Game.......................*/
@@ -118,14 +116,15 @@ function refreshGame() {
   window.location.reload();
 }
 
-/* ......................Return homepage.......................*/
+
+/* ......................Return to homepage.......................*/
+
 function returnHome() {
   document.location.href = ('index.html');
 }
 
 
-
-/* ......................Sound effects.......................*/
+/* ......................Audio sound effects.......................*/
 
 let audioGameMusic = new Audio("assets/sounds/zap-game-music-cut.mp3");
 let startBtn = new Audio("assets/sounds/start-sound.mp3");
@@ -134,7 +133,7 @@ let audioCrypto = new Audio("assets/sounds/score-crypto.mp3");
 let audioAlien = new Audio("assets/sounds/zap-alien.mp3");
 let audioGameOver = new Audio("assets/sounds/game-over.mp3");
 
-//sound effect for play button
+//sound effect for play button and start game play music.
 function playStart() {
   audioGameMusic.play();
   startBtn.play();
@@ -160,7 +159,7 @@ function playGameOver() {
 /* ......................Audio mute feature.......................*/
 function enableMute() {
   audioGameMusic.muted = true;
-  startBtn.muted = true; 
+  startBtn.muted = true;
   audioUfo.muted = true;
   audioCrypto.muted = true;
   audioAlien.muted = true;
