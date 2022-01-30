@@ -18,6 +18,7 @@ Testing ensured that the zapp game appearance, responsiveness and funcionality w
 
 ![screen css validation](/docs/readme-images/css-validator.png)
 
+
  Back to [README.md](README.md)
 
 
@@ -66,10 +67,10 @@ Back to [README.md](README.md)
 
 ## Resolved
 - Testing the game uncovered an issue whereby pressing the play button multiple times ran multiple game loops. 
-- This caused the timer to countdown at speed due to the extra presses running and updating extra game loopcounts.
-- The issue was researched and an if statement was applied to the startGame function to only run if there was not a loopcount runing  - if (!loopCount).
+- This caused the timer to countdown at speed due to the extra presses introducing extra game loopcounts.
+- The issue was researched and an if statement was applied to the startGame function to only run if there was not a loopcount already running.
 - Applying this code worked and the game runs one full game loop at a time despite multiple presses of the play button. 
-- The concept of testing for and defending an issue like this came from a Dave Horricks webinar at Code Institute.
+- The concept of testing for and defending an issue like this came from Dave Horricks webinar at Code Institute.
 - The fix came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
 
 
