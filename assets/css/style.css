@@ -136,7 +136,7 @@ body {
     max-width: 600px;
 }
 
-.button-links {
+#enter-link {
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
