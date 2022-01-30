@@ -70,7 +70,7 @@ Back to [README.md](README.md)
 - This caused the timer to countdown at speed due to the extra presses introducing extra game loopcounts.
 - The issue was researched and an if statement was applied to the startGame function to only run if there was not a loopcount already running.
 - Applying this code worked and the game runs one full game loop at a time despite multiple presses of the play button. 
-- The concept of testing for and defending an issue like this came from Dave Horricks webinar at Code Institute.
+- The concept of testing for and defending an issue like this came from Dave Horrocks webinar at Code Institute.
 - The fix came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
 
 

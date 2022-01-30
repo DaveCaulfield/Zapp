@@ -16,11 +16,11 @@ let music = document.getElementById("audio-start");
 
 
 /* ......................Start Game.......................*/
-/* 
-Start Game function:
-if the game game loop is not running then (defends multi presses on start button)
-calls the game loop function.
-calls the start timer function*/
+
+// Start Game function:
+// if the game game loop is not running then start it (defends multi presses on start button)
+// call the game loop function.
+// call the start timer function
 function startGame() {
   if (!loopCount) {
     gameLoop();
@@ -29,20 +29,16 @@ function startGame() {
 }
 
 /* ......................Game Loop.......................*/
-/* 
-start loop count at 0.
-spaceshipVisible begins at False.
-score begins at 0
-Game loop function:
-set spaceshipVisible to Not False.
-call the spaceships function.
-call the flashing spaceship function.
-increment loop count.
-loop through to 12.
-wait time X to call game loop again.
-after loop count alert Game over. 
-Auto refresh after game over alert. 
-*/
+
+// set spaceshipVisible to not visible, this alternates through the loop displaying spaceships on/off 
+// call spaceships function.
+// increment loopcount
+// Game loop function:
+// loopcoount set to 33.
+// wait time X to call game loop again, visible 1sec invisible 1.8sec 
+// after loop count play gameover music and alert Game over with score result.
+// Auto refresh after game over alert. 
+
 function gameLoop() {
   spaceshipVisible = !spaceshipVisible;
   spaceships();
@@ -58,10 +54,10 @@ function gameLoop() {
 
 
 /* ......................Timer feature.......................*/
-/*
-counts down from 45.
-displays time in timer display
-*/
+
+// counts down from 45.
+// displays time in timer display
+
 function startTimer() {
   time = time - 1;
   document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
@@ -69,26 +65,30 @@ function startTimer() {
 }
 
 
-/* ......................flashing effect, random ufo position, scoring ................*/
-/*
-spaceShips function:
-retrieve the game area div and store it as spaceShips variable.
-set class .visible or .invisible. to apply CSS. Depends if spaceshipVisible is true or false.
-loop through the child divs for every i less than 8.   
-set class.
-set the decrement score onclick feature.
-send the score to update the scoreboard.
-call the playAliensound feature when clicked
-create a random number between 1-8
-(use random-1 to translate 1-8 into index count 0-7)
-add .ufo class to apply ufo image.
-set onclick feature to increment score.
-send the score to update the scoreboard.
-call the playUfoSound feature when ufo clicked
-*/
+/* ......................create flashing effect, aliens, ufo, scoring ................*/
+
+// spaceShips function:
+// retrieve the game area div and set as variable spaceShips .
+// set class .visible or .invisible. to apply CSS display property. Depends if spaceshipVisible is true or false.
+// loop through the 8 child divs and set as variable alien.
+// set class to apply css display property - visible or invisible 
+// set onclick to:
+// decrement the score.
+// apply the score to the scoreboard.
+// play sound effect.
+
+// create a random number between 1-8
+// (use random-1 to translate 1-8 into index count 0-7)
+// add .ufo class to apply ufo image.
+// set onclick feature to:
+// increment score.
+// send the score to update the scoreboard.
+// play sound effect.
+
 function spaceships() {
   let spaceShips = document.getElementById("game-area");
   let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
+  //create aliens
   for (let i = 0; i < 8; i++) {
     let alien = spaceShips.children[i];
     alien.className = setClass;
@@ -98,6 +98,7 @@ function spaceships() {
       playAlienSound();
     };
   }
+  //create ufo
   let randomUfo = Math.floor(Math.random() * 8) + 1;
   let ufo = spaceShips.children[randomUfo - 1];
   ufo.className = setClass + " ufo";
@@ -113,7 +114,7 @@ function spaceships() {
 
 
 
-/* ......................Audio mute features.......................*/
+/* ......................Audio mute feature.......................*/
 
 function enableMute() {
   // let music = document.querySelectorAll("#audio-start");
@@ -123,11 +124,13 @@ function enableMute() {
   music.muted = true;
 }
 
+/* ......................Audio unmute feature.......................*/
+
 function disableMute() {
   music.muted = false;
 }
 
-/* ......................Reset Game featuree.......................*/
+/* ......................Reset Game feature.......................*/
 
 function refreshGame() {
   window.location.reload();
