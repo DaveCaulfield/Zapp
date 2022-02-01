@@ -217,7 +217,7 @@ var span = document.getElementsByClassName("close")[0];
   function scoreModal(){
   modal.style.display = "block";
   if(score < 1){
-    document.getElementById("score-result").innerHTML = "What happened out there? your zapp balance is " + score * 1000 + " crypto coins!!";
+    document.getElementById("score-result").innerHTML = "What happened out there? your zapp crypto balance is " + score * 1000 + " crypto coins!!";
   } else if (score > 20){
     document.getElementById("score-result").innerHTML = "Nailed it! " + score * 1000 + " crypto coins in the bag!";
   } else if (score > 15){
