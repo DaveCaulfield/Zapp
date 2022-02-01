@@ -210,7 +210,6 @@ body {
     color: white;
 }
 
-
 #reset-btn {
     background-color: greenyellow;
     border-radius: 15px;
@@ -223,6 +222,16 @@ body {
 
 #reset-btn:hover {
     background-color: white;
+}
+
+#game-info{
+    font-size: 2rem;
+    color: greenyellow;
+    padding-top: 5px;
+}
+
+#game-info:hover {
+    color: white;
 }
 
 
