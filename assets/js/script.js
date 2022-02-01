@@ -243,6 +243,7 @@ var span = document.getElementsByClassName("close")[0];
 if(span){
   span.onclick = function() {
     modal.style.display = "none";
+    window.location.reload();
   }
   }
   
