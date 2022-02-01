@@ -34,6 +34,11 @@ if(home){
   home.addEventListener("click", returnHome);
 }
 
+let infoIcon = document.getElementById("game-info");
+if(infoIcon){
+  infoIcon.addEventListener("click", infoModal);
+}
+
 
 
 /* ......................Start Game.......................*/
@@ -245,3 +250,30 @@ if(span){
       window.location.reload(); // refresh game when modal is closed
     }
   };
+
+
+
+  /*...... info modal....*/
+ // Get the modal
+var infoModal = document.getElementById("infoModal");
+// Get the <span> element that closes the modal
+var infoSpan = document.getElementById("info-span");
+// Display score results modal with different messages
+  function infoModal(){
+  infoModal.style.display = "block";
+  document.getElementById("info-paragraph").innerHTML = "Rules of Engagement";
+  }
+
+  if(infoSpan){
+    infoSpan.onclick = function() {
+      infoModal.style.display = "none";
+      window.location.reload(); // refresh game when modal is closed
+    };
+    }
+
+    window.onclick = function(event) {
+      if (event.target == infoModal) {
+        infoModal.style.display = "none";
+        window.location.reload(); // refresh game when modal is closed
+      }
+    };
