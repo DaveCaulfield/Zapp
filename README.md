@@ -101,8 +101,25 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 
 [Back to top](#zapp)
 
+
+### The game instructions
+- The game instructions are provided to the user when they select the info icon.
+- A modal opens on screen informing them to tap or click on the ufo.
+
+![Game information](docs/readme-images/game-info.png)
+
+### The game results
+- When the game ends the players score is diplayed on screen.
+- A modal is dispalyed with a messgae and the players score.
+- Different messages are displayed depending on the players score
+
+![game result](docs/readme-images/score-result-modal.png)
+
+[Back to top](#zapp)
+
+
 ### Audio
-- Game theme music plays when the user starts a game. 
+- The game theme music plays when the user starts a game. 
 - Sound effects play when the user zaps the UFO. This feature indicates to the user that they have successfully zapped the UFO and their score has incremented.
 - A different sound effect plays if the user zaps an alien. This feature indicates to the user their score has decremented.
 - The sounds of arcade game music and various interactive sound effects enhance the experience for the user.
