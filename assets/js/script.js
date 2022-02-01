@@ -39,6 +39,11 @@ if(infoIcon){
   infoIcon.addEventListener("click", infoModal);
 }
 
+let homeIcon = document.getElementById("home-icon");
+if(homeIcon){
+  homeIcon.addEventListener("click", returnHome);
+}
+
 
 
 /* ......................Start Game.......................*/
