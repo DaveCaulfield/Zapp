@@ -1,6 +1,14 @@
 
+/* ......................Variables.......................*/
+let loopCount = 0;
+let spaceshipVisible = false;
+let score = 0;
+let time = 45;
+
 
 /*......................Add event listeners ...............*/
+
+// if statements to prevent console errors on landing page.
 
 let play = document.getElementById("play-btn");
 if(play){
@@ -26,11 +34,6 @@ if(home){
   home.addEventListener("click", returnHome);
 }
 
-/* ......................Variables.......................*/
-let loopCount = 0;
-let spaceshipVisible = false;
-let score = 0;
-let time = 45;
 
 
 /* ......................Start Game.......................*/
@@ -67,8 +70,6 @@ function gameLoop() {
   } else {
     playGameOver();
     scoreModal();
-    // alert("you scored " + score * 1000 + " Crypto Coins");
-    // window.location.reload();
   }
 }
 
@@ -108,7 +109,7 @@ function startTimer() {
 // play sound effect.
 
 function spaceships() {
-  let spaceShips = document.getElementById("game-area");
+  let spaceShips = document.getElementById("game-area"); 
   let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
   //create aliens
   for (let i = 0; i < 8; i++) {
@@ -156,7 +157,7 @@ let audioCrypto = new Audio("assets/sounds/score-crypto.mp3");
 let audioAlien = new Audio("assets/sounds/zap-alien.mp3");
 let audioGameOver = new Audio("assets/sounds/game-over.mp3");
 
-//sound effect for play button and start game play music.
+//sound effect for play button and start game music.
 function playStart() {
   audioGameMusic.play();
   startBtn.play();
@@ -201,20 +202,13 @@ function disableMute() {
 
 
 
-
-
+/* ......................Modal feature - Game over score results.......................*/
 
 // Get the modal
 var modal = document.getElementById("myModal");
-
-// Get the button that opens the modal
-var btn = document.getElementById("myBtn");
-
 // Get the <span> element that closes the modal
 var span = document.getElementsByClassName("close")[0];
-
-// When the user clicks on the button, open the modal
-// btn.onclick = function() {
+// Display score results modal with different messages
   function scoreModal(){
   modal.style.display = "block";
   if(score < 1){
@@ -236,21 +230,18 @@ var span = document.getElementsByClassName("close")[0];
 }
 
 
-
-
-
 // When the user clicks on <span> (x), close the modal
 if(span){
   span.onclick = function() {
     modal.style.display = "none";
-    window.location.reload();
-  }
+    window.location.reload(); // refresh game when modal is closed
+  };
   }
   
   // When the user clicks anywhere outside of the modal, close it
   window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
-      window.location.reload();
+      window.location.reload(); // refresh game when modal is closed
     }
-  }
+  };
