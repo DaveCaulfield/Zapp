@@ -89,10 +89,11 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 
 ### The game area buttons
 - The buttons under the game area keep the style consistent for the user.
-- The Home button brings the user back to the landing page.
-- The Play button allows the user to start the game.
 - Audio icons allow the user to turn the music off and on.
+- The Play button allows the user to start the game.
 - The reset button allows the user to reset the game at any point.
+- The infoirmation icon opens a modal giving game instructions to the user.
+- The home icon returns to user to the landing page.
 - All buttons and icons change background colour to white when hovered on.
 - All buttons and icons are clear and easily understood by the user makng it an immediately intuitive experience.
 
