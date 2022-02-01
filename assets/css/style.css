@@ -293,6 +293,16 @@ body {
     #game-buttons {
         max-width: 100%;
     }
+
+    #reset-btn {
+        font-size: 1rem;
+        padding: 1px 6px 1px 6px;
+    }
+
+    #play-btn {
+        font-size: 1rem;
+        padding: 1px 10px 1px 10px;
+    }
 }
 
 /*.........media queries...............*/
@@ -338,14 +348,7 @@ body {
 
     #home-btn {
         font-size: 1rem;
-    }
-
-    #reset-btn {
-        font-size: 1rem;
-    }
-
-    #play-btn {
-        font-size: 1rem;
+      
     }
 
     .button-links {

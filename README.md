@@ -109,7 +109,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 ![Game information](docs/readme-images/game-info.png)
 
 ### The game results
-- When the game ends the players score is diplayed on screen.
+- When the game ends the players score is displayed on screen.
 - A modal is dispalyed with a messgae and the players score.
 - Different messages are displayed depending on the players score
 
