@@ -79,6 +79,13 @@ Back to [README.md](README.md)
 
     Back to [README.md](README.md)
 
+ ## Resolved
+- Testing also highlighted that the timer ran into negative numbers.
+- The code was revisited and ammended to include am if statement to contain the count between 45 and 0.
+- This improves the game experience for the user.
+
+    Back to [README.md](README.md)
+
 
     ## Lighthouse
 - [lighthouse](https://developers.google.com/web/tools/lighthouse) was used to test the site for performance, accessibility, best bractices and SEO.
