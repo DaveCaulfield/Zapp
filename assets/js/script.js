@@ -36,7 +36,7 @@ if (home) {
 
 let infoIcon = document.getElementById("game-info");
 if (infoIcon) {
-  infoIcon.addEventListener("click", infoModal);
+  infoIcon.addEventListener("click", openInfo);
 }
 
 let homeIcon = document.getElementById("home-icon");
@@ -225,7 +225,7 @@ function scoreModal() {
   } else if (score > 15) {
     document.getElementById("score-result").innerHTML = "Sharp shooting out there!, you just scored " + score * 1000 + " crypto coins!!";
   } else if (score > 10) {
-    document.getElementById("score-result").innerHTML = "Nice work, you zapped well, you scored " + score * 1000 + " crypto coins!!";
+    document.getElementById("score-result").innerHTML = "Nice work, you zapped well . . . you scored " + score * 1000 + " crypto coins!!";
   } else if (score > 5) {
     document.getElementById("score-result").innerHTML = "OK you're warming up! you scored " + score * 1000 + " crypto coins!!";
   } else if (score >= 1 && score <= 5) {
@@ -255,25 +255,25 @@ window.onclick = function (event) {
 /*......................Modal instruction information........................*/
 
 // Get the modal
-let gameInfo = document.getElementById("infoModal");
+let infoModal = document.getElementById("infoModal");
 // Get the <span> element that closes the modal
 let infoSpan = document.getElementById("info-span");
 // Display score results modal with different messages
-function infoModal() {
-  gameInfo.style.display = "block";
+  function openInfo(){
+  infoModal.style.display = "block";
   document.getElementById("info-paragraph").innerHTML = "Tap or click on the rogue UFO to score crypto coins . . . but be careful, if you tap or click on a friendly alien you will loose coins.";
-}
-
-if (infoSpan) {
-  infoSpan.onclick = function () {
-    gameInfo.style.display = "none";
-    window.location.reload(); // refresh game when modal is closed
-  };
-}
-
-window.onclick = function (event) {
-  if (event.target == infoModal) {
-    gameInfo.style.display = "none";
-    window.location.reload(); // refresh game when modal is closed
   }
-};
+
+  if(infoSpan){
+    infoSpan.onclick = function() {
+      infoModal.style.display = "none";
+      window.location.reload(); // refresh game when modal is closed
+    };
+    }
+
+    window.onclick = function(event) {
+      if (event.target == infoModal) {
+        infoModal.style.display = "none";
+        window.location.reload(); // refresh game when modal is closed
+      }
+    };
