@@ -161,7 +161,7 @@ body {
 }
 
 
-#home-btn {
+/* #home-btn {
     background-color: greenyellow;
     border-radius: 15px;
     font-size: 1.5rem;
@@ -173,7 +173,9 @@ body {
 
 #home-btn:hover {
     background-color: white;
-}
+} */
+
+
 
 
 #play-btn {
@@ -234,6 +236,15 @@ body {
     color: white;
 }
 
+#home-icon{
+    font-size: 2rem;
+    color: greenyellow;
+    padding-top: 5px;
+}
+
+#home-icon:hover {
+    color: white;
+}
 
 
 
