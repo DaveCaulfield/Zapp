@@ -1,6 +1,6 @@
 # zapp
 
-zapp is a free online game. The game is designed to be an easy to use and fun game where users can enjoy the challenge of zapping an animated UFO. The game is styled with a retro arcade game theme and brings the sounds and feel of an old arcade game to mobile, tablet, laptop and desktop for anyone to enjoy.
+zapp is a free online game. The game is designed to be an easy to use and fun game where users can enjoy the challenge of zapping an animated UFO. The game is styled with a retro arcade game theme and brings the sounds and feel of an old arcade game to mobile, tablet, laptop and desktop for any age group to enjoy. A modern twist is brought to the game by the use of crypto coins as the scoring system for zapping the UFO.
 
 Play [zapp](https://davecaulfield.github.io/zapp/)
 
@@ -217,6 +217,7 @@ Cloning the repository creates a local copy on your computer.
  - The images for the UFO and aliens came from [Pixabay](https://pixabay.com/)
  - images were compressed using [Compressor](https://compressor.io/) and [Tinypng](https://tinypng.com/)
  - The idea and code structure for the flashing elements came from kids coding book [getcoding](https://getcodingkids.com/)
+ - The code structure for the Modals came from [W3Schools](https://www.w3schools.com//)
  - The mp3 audio files came from [Zapsplat](https://www.zapsplat.com/)
   
  [Back to top](#zapp)
