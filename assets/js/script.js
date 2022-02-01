@@ -1,4 +1,3 @@
-
 /* ......................Variables.......................*/
 let loopCount = 0;
 let spaceshipVisible = false;
@@ -6,41 +5,42 @@ let score = 0;
 let time = 45;
 
 
-/*......................Add event listeners ...............*/
+/*......................Event listeners ...............*/
 
 // if statements to prevent console errors on landing page.
 
 let play = document.getElementById("play-btn");
-if(play){
+if (play) {
   play.addEventListener("click", startGame);
 }
+
 let reset = document.getElementById("reset-btn");
-if(reset){
+if (reset) {
   reset.addEventListener("click", refreshGame);
 }
 
 let muteOn = document.getElementById("audio-off");
-if(muteOn){
+if (muteOn) {
   muteOn.addEventListener("click", enableMute);
 }
 
 let muteOff = document.getElementById("audio-on");
-if(muteOff){
+if (muteOff) {
   muteOff.addEventListener("click", disableMute);
 }
 
 let home = document.getElementById("home-btn");
-if(home){
+if (home) {
   home.addEventListener("click", returnHome);
 }
 
 let infoIcon = document.getElementById("game-info");
-if(infoIcon){
+if (infoIcon) {
   infoIcon.addEventListener("click", infoModal);
 }
 
 let homeIcon = document.getElementById("home-icon");
-if(homeIcon){
+if (homeIcon) {
   homeIcon.addEventListener("click", returnHome);
 }
 
@@ -91,10 +91,10 @@ function gameLoop() {
 
 function startTimer() {
   time = time - 1;
-  if (time >= 0){
-  document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
-  setTimeout(startTimer, 1000);
-}
+  if (time >= 0) {
+    document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
+    setTimeout(startTimer, 1000);
+  }
 }
 
 
@@ -113,13 +113,13 @@ function startTimer() {
 // create a random number between 1-8
 // (use random-1 to translate 1-8 into index count 0-7)
 // add .ufo class to apply ufo image.
-// set onclick feature to:
+// set onclick to:
 // increment score.
 // send the score to update the scoreboard.
 // play sound effect.
 
 function spaceships() {
-  let spaceShips = document.getElementById("game-area"); 
+  let spaceShips = document.getElementById("game-area");
   let setClass = spaceshipVisible ? "spaceship visible" : "spaceship invisible";
   //create aliens
   for (let i = 0; i < 8; i++) {
@@ -150,13 +150,11 @@ function refreshGame() {
   window.location.reload();
 }
 
-
 /* ......................Return to homepage.......................*/
 
 function returnHome() {
   document.location.href = ('index.html');
 }
-
 
 /* ......................Audio sound effects.......................*/
 
@@ -167,7 +165,7 @@ let audioCrypto = new Audio("assets/sounds/score-crypto.mp3");
 let audioAlien = new Audio("assets/sounds/zap-alien.mp3");
 let audioGameOver = new Audio("assets/sounds/game-over.mp3");
 
-//sound effect for play button and start game music.
+//sound effect for play button and game music.
 function playStart() {
   audioGameMusic.play();
   startBtn.play();
@@ -211,74 +209,71 @@ function disableMute() {
 }
 
 
-
-/* ......................Modal feature - Game over score results.......................*/
+/* ......................Modal Game over score results.......................*/
 
 // Get the modal
-var modal = document.getElementById("myModal");
+let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
-var span = document.getElementsByClassName("close")[0];
+let span = document.getElementsByClassName("close")[0];
 // Display score results modal with different messages
-  function scoreModal(){
+function scoreModal() {
   modal.style.display = "block";
-  if(score < 1){
+  if (score < 1) {
     document.getElementById("score-result").innerHTML = "What happened out there? your zapp crypto balance is at " + score * 1000 + " crypto coins!!";
-  } else if (score > 20){
+  } else if (score > 20) {
     document.getElementById("score-result").innerHTML = "Nailed it! " + score * 1000 + " crypto coins in the bag!";
-  } else if (score > 15){
+  } else if (score > 15) {
     document.getElementById("score-result").innerHTML = "Sharp shooting out there!, you just scored " + score * 1000 + " crypto coins!!";
-  } else if (score > 10){
+  } else if (score > 10) {
     document.getElementById("score-result").innerHTML = "Nice work, you zapped well, you scored " + score * 1000 + " crypto coins!!";
-  } else if (score > 5){
+  } else if (score > 5) {
     document.getElementById("score-result").innerHTML = "OK you're warming up! you scored " + score * 1000 + " crypto coins!!";
-  } else if (score >= 1 && score <= 5){
+  } else if (score >= 1 && score <= 5) {
     document.getElementById("score-result").innerHTML = "Not bad, you scored " + score * 1000 + " crypto coins!!";
   } else {
     document.getElementById("score-result").innerHTML = "Congratulations " + score * 1000 + " crypto coins!!";
   }
- 
 }
 
-
 // When the user clicks on <span> (x), close the modal
-if(span){
-  span.onclick = function() {
+if (span) {
+  span.onclick = function () {
     modal.style.display = "none";
     window.location.reload(); // refresh game when modal is closed
   };
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function (event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+    window.location.reload(); // refresh game when modal is closed
   }
-  
-  // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function(event) {
-    if (event.target == modal) {
-      modal.style.display = "none";
-      window.location.reload(); // refresh game when modal is closed
-    }
-  };
+};
 
 
+/*......................Modal instruction information........................*/
 
-  /*...... info modal....*/
- // Get the modal
-var infoModal = document.getElementById("infoModal");
+// Get the modal
+let gameInfo = document.getElementById("infoModal");
 // Get the <span> element that closes the modal
-var infoSpan = document.getElementById("info-span");
+let infoSpan = document.getElementById("info-span");
 // Display score results modal with different messages
-  function infoModal(){
-  infoModal.style.display = "block";
+function infoModal() {
+  gameInfo.style.display = "block";
   document.getElementById("info-paragraph").innerHTML = "Tap or click on the rogue UFO to score crypto coins . . . but be careful, if you tap or click on a friendly alien you will loose coins.";
+}
+
+if (infoSpan) {
+  infoSpan.onclick = function () {
+    gameInfo.style.display = "none";
+    window.location.reload(); // refresh game when modal is closed
+  };
+}
+
+window.onclick = function (event) {
+  if (event.target == infoModal) {
+    gameInfo.style.display = "none";
+    window.location.reload(); // refresh game when modal is closed
   }
-
-  if(infoSpan){
-    infoSpan.onclick = function() {
-      infoModal.style.display = "none";
-      window.location.reload(); // refresh game when modal is closed
-    };
-    }
-
-    window.onclick = function(event) {
-      if (event.target == infoModal) {
-        infoModal.style.display = "none";
-        window.location.reload(); // refresh game when modal is closed
-      }
-    };
+};

@@ -16,12 +16,12 @@
 </head>
 
 <body>
-<!-- Timer & Score -->
+    <!-- Timer & Score -->
     <div id="game-scoreboard">
         <div id="time-display"> Timer 45sec</div>
         <div id="player-score">Crypto Coins 0000 </div>
-        </div>
-<!-- Game area for spaceships -->
+    </div>
+    <!-- Game area for spaceships -->
     <div id="game-area">
         <div class="spaceship"></div>
         <div class="spaceship"></div>
@@ -31,9 +31,9 @@
         <div class="spaceship"></div>
         <div class="spaceship"></div>
         <div class="spaceship"></div>
-        </div>
+    </div>
 
-<!-- Game buttons -->
+    <!-- Game buttons -->
     <div class="game-buttons">
         <div>
             <i id="audio-off" class="fa fa-volume-mute" onclick="enableMute()"></i>
@@ -41,48 +41,39 @@
         <div>
             <i id="audio-on" class="fas fa-volume-up"></i>
         </div>
-
-        <!-- <input id="home-btn" type="button" value="Home" /> -->
         <input id="play-btn" type="button" value="Play" />
-        
-        <input id="reset-btn" type="button" value="Reset"  />
-        <div> 
-            <i id ="game-info" class="fas fa-info-circle"></i>
-        </div>  
+        <input id="reset-btn" type="button" value="Reset" />
         <div>
-            <i id="home-icon"class="fas fa-home"></i>
-          </div>
+            <i id="game-info" class="fas fa-info-circle"></i>
+        </div>
+        <div>
+            <i id="home-icon" class="fas fa-home"></i>
+        </div>
 
     </div>
 
 
+    <!-- The Game results Modal -->
+    <div id="myModal" class="modal">
 
-<!-- The Game results Modal -->
-<div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p id="score-result"></p>
+            <span class="close">&times;</span>
+        </div>
+    </div>
 
-    <!-- Modal content -->
-    <div class="modal-content">
-      <p id="score-result"></p>
-      <span class="close">&times;</span>
+
+    <!-- The info Modal -->
+    <div id="infoModal" class="modal">
+
+        <!-- Modal content -->
+        <div class="modal-content">
+            <p id="info-paragraph"></p>
+            <span id="info-span" class="close">&times;</span>
+        </div>
     </div>
-  
-  </div>
-  
-  
-  <!-- The info Modal -->
-  <div id="infoModal" class="modal">
-  
-      <!-- Modal content -->
-      <div class="modal-content">
-        <p id="info-paragraph"></p>
-        <span id="info-span" class="close">&times;</span>
-      
-      </div>
-    
-    </div>
-  
-  
-  </div>   
+
     <script src="assets/js/script.js"></script>
 </body>
 
