@@ -261,7 +261,7 @@ var infoSpan = document.getElementById("info-span");
 // Display score results modal with different messages
   function infoModal(){
   infoModal.style.display = "block";
-  document.getElementById("info-paragraph").innerHTML = "Rules of Engagement";
+  document.getElementById("info-paragraph").innerHTML = "Tap or click on the rogue UFO to score crypto coins . . . but be careful, if you tap or click on a friendly alien you will loose crypto coins.";
   }
 
   if(infoSpan){
