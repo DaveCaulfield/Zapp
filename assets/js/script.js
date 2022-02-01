@@ -80,8 +80,10 @@ function gameLoop() {
 
 function startTimer() {
   time = time - 1;
+  if (time >= 0){
   document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
   setTimeout(startTimer, 1000);
+}
 }
 
 
