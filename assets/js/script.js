@@ -1,10 +1,30 @@
+
+
 /*......................Add event listeners ...............*/
 
-document.getElementById("play-btn").addEventListener("click", startGame);
-document.getElementById("reset-btn").addEventListener("click", refreshGame);
-document.getElementById("audio-off").addEventListener("click", enableMute);
-document.getElementById("audio-on").addEventListener("click", disableMute);
-document.getElementById("home-btn").addEventListener("click", returnHome);
+let play = document.getElementById("play-btn");
+if(play){
+  play.addEventListener("click", startGame);
+}
+let reset = document.getElementById("reset-btn");
+if(reset){
+  reset.addEventListener("click", refreshGame);
+}
+
+let muteOn = document.getElementById("audio-off");
+if(muteOn){
+  muteOn.addEventListener("click", enableMute);
+}
+
+let muteOff = document.getElementById("audio-on");
+if(muteOff){
+  muteOff.addEventListener("click", disableMute);
+}
+
+let home = document.getElementById("home-btn");
+if(home){
+  home.addEventListener("click", returnHome);
+}
 
 /* ......................Variables.......................*/
 let loopCount = 0;
