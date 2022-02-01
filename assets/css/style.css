@@ -195,7 +195,7 @@ body {
 #audio-off {
     font-size: 2rem;
     color: greenyellow;
-    padding-right: 15px;
+    padding-top: 5px;
 }
 
 #audio-off:hover {
@@ -245,6 +245,8 @@ body {
 #home-icon:hover {
     color: white;
 }
+
+
 
 
 
@@ -379,6 +381,14 @@ body {
     }
 
     #audio-off {
+        font-size: 1.1rem;
+    }
+
+    #home-icon{
+        font-size: 1.1rem;
+    }
+
+    #info-icon{
         font-size: 1.1rem;
     }
 }
