@@ -77,8 +77,7 @@ function gameLoop() {
   loopCount++;
   if (loopCount < 33) {
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1800);
-  } else {
-    
+  } else {    
     scoreModal();
     playGameOver();
   }
@@ -191,12 +190,12 @@ function playGameOver() {
 
 /* ......................Audio mute feature.......................*/
 function enableMute() {
+  audioGameOver.muted = true;
   audioGameMusic.muted = true;
   startBtn.muted = true;
   audioUfo.muted = true;
   audioCrypto.muted = true;
   audioAlien.muted = true;
-  audioGameOver.muted = true;
 }
 
 /* ......................Audio unmute feature.......................*/
@@ -229,9 +228,9 @@ function scoreModal() {
   } else if (score > 10) {
     document.getElementById("score-result").innerHTML = "Nice work, you zapped well . . . you scored " + score * 1000 + " crypto coins!!";
   } else if (score > 5) {
-    document.getElementById("score-result").innerHTML = "OK you're warming up! you scored " + score * 1000 + " crypto coins!!";
-  } else if (score >= 1 && score <= 5) {
     document.getElementById("score-result").innerHTML = "Not bad, you scored " + score * 1000 + " crypto coins!!";
+  } else if (score >= 1 && score <= 5) {
+    document.getElementById("score-result").innerHTML = "OK you're warming up! you scored " + score * 1000 + " crypto coins!!";
   } else {
     document.getElementById("score-result").innerHTML = "Congratulations " + score * 1000 + " crypto coins!!";
   }
