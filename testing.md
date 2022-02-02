@@ -19,7 +19,17 @@ Testing ensured that the zapp game appearance, responsiveness and funcionality w
 ![screen css validation](/docs/readme-images/css-validator.png)
 
 
- Back to [README.md](README.md)
+
+  Back to [README.md](README.md)
+
+
+
+ - Javascript validation tests were carried out with JShint. Minor errors including missing semi-colons were flagged and resolved. 
+ - There is  warning of "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics." 
+ - This was researched but needs to be looked at further in future releases as it is currently outside the scope of the JS essentials course and doesn't affect the functionality of the game.
+
+
+  Back to [README.md](README.md)
 
 
 
@@ -85,6 +95,12 @@ Back to [README.md](README.md)
 - This improves the game experience for the user.
 
     Back to [README.md](README.md)
+
+
+## Unresolved
+- The UFO and Aliens flash on screen for 1 second at a time. There is a bug in the game where if a player is fast enough it is possible to click the image and score more than once.
+- It is not a very noticeable bug to the user and doesn't detract from the user experience. The game still plays in accordance to the rules.
+- This will be revisted in the next release of the game. 
 
 
     ## Lighthouse
