@@ -79,7 +79,6 @@ function gameLoop() {
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1800);
   } else {    
     scoreModal();
-    playGameOver();
   }
 }
 
@@ -94,6 +93,9 @@ function startTimer() {
   if (time >= 0) {
     document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
     setTimeout(startTimer, 1000);
+  }
+  if (time === 0 && !audioGameOver.muted){
+    playGameOver();
   }
 }
 
@@ -185,8 +187,9 @@ function playAlienSound() {
 //sound effect for game over
 function playGameOver() {
   let audioGameOver = new Audio("assets/sounds/game-over.mp3");
-  audioGameOver.play();
+    audioGameOver.play();
 }
+
 
 /* ......................Audio mute feature.......................*/
 function enableMute() {
