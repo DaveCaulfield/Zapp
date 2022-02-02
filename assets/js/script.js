@@ -62,14 +62,13 @@ function startGame() {
 
 /* ......................Game Loop.......................*/
 
-// set spaceshipVisible to not visible, this alternates through the loop displaying spaceships on/off 
+// invert the spaceshipVisible variable, this alternates through the loop to facilitate spaceships on/off 
 // call spaceships function.
 // increment loopcount
 // Game loop function:
-// loopcoount set to 33.
-// wait time X to call game loop again, visible 1sec invisible 1.8sec 
-// after loop count play gameover music and alert Game over with score result.
-// Auto refresh after game over alert. 
+// loop count set to 33.
+// setTimeout wait time to call game loop again, visible 1sec invisible 1.8sec 
+// call the scoreModal for results
 
 function gameLoop() {
   spaceshipVisible = !spaceshipVisible;
@@ -85,8 +84,9 @@ function gameLoop() {
 
 /* ......................Timer feature.......................*/
 
-// counts down from 45.
+// counts down from 45 to 0.
 // displays time in timer display
+//plays game over music if not muted
 
 function startTimer() {
   time = time - 1;
@@ -103,10 +103,10 @@ function startTimer() {
 /* ......................create flashing effect, aliens, ufo, scoring ................*/
 
 // spaceShips function:
-// retrieve the game area div and set as variable spaceShips .
-// set class .visible or .invisible. to apply CSS display property. Depends if spaceshipVisible is true or false.
+// retrieve the game area div and define variable spaceShips .
+// define SetClass to apply CSS display property for visible or invisible.  Depends if spaceshipVisible is true or false.
 // loop through the 8 child divs and set as variable alien.
-// set class to apply css display property - visible or invisible 
+// Apply setClass value as a class for alien
 // set onclick to:
 // decrement the score.
 // apply the score to the scoreboard.
@@ -147,13 +147,13 @@ function spaceships() {
 
 
 /* ......................Reset Game feature.......................*/
-
+// press reset button to reset game
 function refreshGame() {
   window.location.reload();
 }
 
 /* ......................Return to homepage.......................*/
-
+//prees home icon to return to landing page
 function returnHome() {
   document.location.href = ('index.html');
 }
@@ -215,7 +215,7 @@ function disableMute() {
 /* ......................Modal Game over score results.......................*/
 
 // Get the modal
-let modal = document.getElementById("myModal");
+let modal = document.getElementById("resultsModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
 
