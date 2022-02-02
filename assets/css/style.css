@@ -190,6 +190,7 @@ body {
 
 #play-btn:hover {
     background-color: white;
+    cursor: pointer;
 }
 
 #audio-off {
@@ -200,16 +201,19 @@ body {
 
 #audio-off:hover {
     color: white;
+    cursor: pointer;
 }
 
 #audio-on {
     font-size: 2rem;
     color: greenyellow;
     padding-top: 5px;
+    
 }
 
 #audio-on:hover {
     color: white;
+    cursor: pointer;
 }
 
 #reset-btn {
@@ -224,6 +228,7 @@ body {
 
 #reset-btn:hover {
     background-color: white;
+    cursor: pointer;
 }
 
 #game-info{
@@ -234,6 +239,7 @@ body {
 
 #game-info:hover {
     color: white;
+    cursor: pointer;
 }
 
 #home-icon{
@@ -244,6 +250,7 @@ body {
 
 #home-icon:hover {
     color: white;
+    cursor: pointer;
 }
 
 
