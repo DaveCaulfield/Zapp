@@ -83,9 +83,11 @@ Back to [README.md](README.md)
 - The concept of testing for and defending an issue like this came from Dave Horrocks webinar at Code Institute.
 - The solution came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
 ## Resolved
-- Testing also highlighted that the audio mute feature muted the game music that plays during the game but not the sound effects.
+- Testing highlighted that the audio mute feature muted the game music that plays during the game but not the sound effects.
 - The code was revisited and ammended to include all audio sound effects in the mute feature.
-- This improves the game experience for the user.
+- Further testing found that the game over music was still playing after the mute feature was selected.
+- The function call for the game over music was moved and an if statement was added to check if mute was enabled.
+- These fixes improve the game experience for the user.
 
     Back to [README.md](README.md)
 
