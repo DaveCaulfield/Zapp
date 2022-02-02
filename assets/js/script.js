@@ -78,8 +78,9 @@ function gameLoop() {
   if (loopCount < 33) {
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1800);
   } else {
-    playGameOver();
+    
     scoreModal();
+    playGameOver();
   }
 }
 
@@ -215,6 +216,7 @@ function disableMute() {
 let modal = document.getElementById("myModal");
 // Get the <span> element that closes the modal
 let span = document.getElementsByClassName("close")[0];
+
 // Display score results modal with different messages
 function scoreModal() {
   modal.style.display = "block";
@@ -235,7 +237,7 @@ function scoreModal() {
   }
 }
 
-// When the user clicks on <span> (x), close the modal
+// close the modal with (X)
 if (span) {
   span.onclick = function () {
     modal.style.display = "none";
@@ -243,7 +245,7 @@ if (span) {
   };
 }
 
-// When the user clicks anywhere outside of the modal, close it
+// close the modal clicking anywhere on window
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -258,19 +260,21 @@ window.onclick = function (event) {
 let infoModal = document.getElementById("infoModal");
 // Get the <span> element that closes the modal
 let infoSpan = document.getElementById("info-span");
-// Display score results modal with different messages
+
+// Display game instructions
   function openInfo(){
   infoModal.style.display = "block";
   document.getElementById("info-paragraph").innerHTML = "Tap or click on the rogue UFO to score crypto coins . . . but be careful, if you tap or click on a friendly alien you will loose coins.";
   }
 
+// close the modal with (X)
   if(infoSpan){
     infoSpan.onclick = function() {
       infoModal.style.display = "none";
       window.location.reload(); // refresh game when modal is closed
     };
     }
-
+  //close the modal clicking anywhere on window
     window.onclick = function(event) {
       if (event.target == infoModal) {
         infoModal.style.display = "none";
