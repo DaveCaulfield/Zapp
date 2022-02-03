@@ -19,25 +19,20 @@ Testing ensured that the zapp game appearance, responsiveness and funcionality w
 ![screen css validation](/docs/readme-images/css-validator.png)
 
 
-
   Back to [README.md](README.md)
 
 
-
- - Javascript validation tests were carried out with JShint. Minor errors including missing semi-colons were flagged and resolved. 
- - There is  warning of "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics." 
- - This was researched but needs to be looked at further in future releases as it is currently outside the scope of the JS essentials course and doesn't affect the functionality of the game.
-
-
+ - Javascript validation tests were carried out with JShint
+ - Minor errors including missing semi-colons were flagged and resolved leaving no errors in validation results.
+ - There is one warning notification of "Functions declared within loops referencing an outer scoped variable may lead to confusing semantics." 
+ - This was researched and will be revisited for future releases as it is currently outside the scope of the JS essentials course and doesn't affect the functionality of the game.
+ 
   Back to [README.md](README.md)
-
-
-
 
 
 ## Responsiveness Testing
 - Responsivness was tested using [Google Chrome DevTools](https://developer.chrome.com/docs/devtools/) and [Responsive design checker](https://responsivedesignchecker.com/). 
-    - Devices tested using these tools were Moto G4, Galaxy S5, iPhone5, iPhone6/7 iPad, iPad pro,Display <1200px, Display >1200px
+    - Devices tested using these tools were Moto G4, Galaxy S5, iPhone5, iPhone6/7 iPad, iPad pro, Display < 1200px, Display > 1200px
     - Media queries were added to ensure responsiveness for smalll screens. 
     - Max width was set to ensure site displayed ok on extra large screen and prevent overflow on small screens.
     - After adding media queries the site was found to be responsive for mobile, tablet, laptop and desktop screens.
@@ -82,10 +77,11 @@ Back to [README.md](README.md)
 - Applying this code worked and the game runs one full game loop at a time despite multiple presses of the play button. 
 - The concept of testing for and defending an issue like this came from Dave Horrocks webinar at Code Institute.
 - The solution came from watching a video lecture on [itprotv](https://www.itpro.tv/)  
+
 ## Resolved
 - Testing highlighted that the audio mute feature muted the game music that plays during the game but not the sound effects.
 - The code was revisited and ammended to include all audio sound effects in the mute feature.
-- Further testing found that the game over music was still playing after the mute feature was selected.
+- Further testing found that the game over music still played after the mute feature was selected.
 - The function call for the game over music was moved and an if statement was added to check if mute was enabled.
 - These fixes improve the game experience for the user.
 
@@ -93,7 +89,7 @@ Back to [README.md](README.md)
 
  ## Resolved
 - Testing also highlighted that the timer ran into negative numbers.
-- The code was revisited and ammended to include am if statement to contain the count between 45 and 0.
+- The code was revisited and ammended to include an if statement to contain the count between 45 and 0.
 - This improves the game experience for the user.
 
     Back to [README.md](README.md)
@@ -101,7 +97,7 @@ Back to [README.md](README.md)
 
 ## Unresolved
 - The UFO and Aliens flash on screen for 1 second at a time. There is a bug in the game where if a player is fast enough it is possible to click the image and score more than once.
-- It is not a very noticeable bug to the user and doesn't detract from the user experience. The game still plays in accordance to the rules.
+- It is not a very noticeable bug to the user and doesn't detract from the user experience. The game still functions in accordance to the rules.
 - This will be revisted in the next release of the game. 
 
 
