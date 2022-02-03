@@ -92,7 +92,7 @@ The zapp game is designed to be a fun game to play for all ages. It is designed 
 - Audio icons allow the user to turn the music off and on.
 - The Play button allows the user to start the game.
 - The reset button allows the user to reset the game at any point.
-- The infoirmation icon opens a modal giving game instructions to the user.
+- The information icon opens a modal providing game instructions to the user.
 - The home icon returns to user to the landing page.
 - All buttons and icons change background colour to white when hovered on.
 - All buttons and icons are clear and easily understood by the user makng it an immediately intuitive experience.
@@ -216,7 +216,7 @@ Cloning the repository creates a local copy on your computer.
  - The background image for the game area came from [Max Pixel](https://www.maxpixel.net//)
  - The images for the UFO and aliens came from [Pixabay](https://pixabay.com/)
  - images were compressed using [Compressor](https://compressor.io/) and [Tinypng](https://tinypng.com/)
- - The idea and code structure for the flashing elements came from kids coding book [getcoding](https://getcodingkids.com/)
+ - The idea and code structure for the flashing elements came from coding book [getcoding](https://getcodingkids.com/)
  - The code structure for the Modals came from [W3Schools](https://www.w3schools.com//)
  - The mp3 audio files came from [Zapsplat](https://www.zapsplat.com/)
   
