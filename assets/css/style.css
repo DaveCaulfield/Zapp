@@ -75,10 +75,6 @@ body {
 }
 
 
-
-
-
-
 /*..........................................Game Page..........................................*/
 
 #game-scoreboard {
@@ -89,7 +85,7 @@ body {
     color: greenyellow;
 }
 
- /* Timer */
+/* Timer */
 #time-display {
     background-color: black;
     color: greenyellow;
@@ -101,7 +97,7 @@ body {
     flex-wrap: wrap;
 }
 
- /* score display area*/
+/* score display area*/
 #player-score {
     background-color: black;
     color: greenyellow;
@@ -113,7 +109,7 @@ body {
     flex-wrap: wrap;
 }
 
- /* The game area */
+/* The game area */
 #game-area {
     display: grid;
     grid-template-columns: auto auto auto auto;
@@ -160,24 +156,6 @@ body {
     background-color: white;
 }
 
-
-/* #home-btn {
-    background-color: greenyellow;
-    border-radius: 15px;
-    font-size: 1.5rem;
-    padding: 3px 10px 3px 10px;
-    margin: 5px 10px;
-    font-family: orbitron, verdana;
-    font-weight: bold;
-}
-
-#home-btn:hover {
-    background-color: white;
-} */
-
-
-
-
 #play-btn {
     background-color: greenyellow;
     border-radius: 15px;
@@ -208,7 +186,6 @@ body {
     font-size: 2rem;
     color: greenyellow;
     padding-top: 5px;
-    
 }
 
 #audio-on:hover {
@@ -231,7 +208,7 @@ body {
     cursor: pointer;
 }
 
-#game-info{
+#game-info {
     font-size: 2rem;
     color: greenyellow;
     padding-top: 5px;
@@ -242,7 +219,7 @@ body {
     cursor: pointer;
 }
 
-#home-icon{
+#home-icon {
     font-size: 2rem;
     color: greenyellow;
     padding-top: 5px;
@@ -252,11 +229,6 @@ body {
     color: white;
     cursor: pointer;
 }
-
-
-
-
-
 
 
 /*.......css javascript classes . . . .*/
@@ -272,7 +244,9 @@ body {
 
 
 
-/*.........media queries...............*/
+/*.........................................Media queries....................................*/
+
+/*.........media query 1400px...............*/
 @media screen and (max-width: 1400px) {
 
     .spaceship {
@@ -280,8 +254,7 @@ body {
     }
 }
 
-/*.........media queries...............*/
-
+/*.........media query 800px...............*/
 @media screen and (max-width: 800px) {
 
     #game-area {
@@ -312,7 +285,7 @@ body {
     }
 }
 
-/*.........media queries...............*/
+/*.........media query 480px...............*/
 
 @media screen and (max-width: 480px) {
     #game-area {
@@ -355,7 +328,7 @@ body {
 
     #home-btn {
         font-size: 1rem;
-      
+
     }
 
     .button-links {
@@ -364,7 +337,7 @@ body {
 
 }
 
-/*.........media queries...............*/
+/*..............media query 350px ................*/
 
 @media screen and (max-width: 350px) {
     #game-area {
@@ -381,7 +354,6 @@ body {
         margin-bottom: 2px;
     }
 
-
     #game-buttons {
         display: inline-block;
     }
@@ -394,43 +366,56 @@ body {
         font-size: 1.1rem;
     }
 
-    #home-icon{
+    #home-icon {
         font-size: 1.1rem;
     }
 
-    #info-icon{
+    #info-icon {
         font-size: 1.1rem;
     }
 }
 
+
+/*................................Modals...........................................*/
 /* The Modal (background) */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Sit on top */
     left: 0;
     top: 10%;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /*  color */
-    background-color: rgb(0,0,0,0.4); /*  color */
-    color:greenyellow;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /*  color */
+    background-color: rgb(0, 0, 0, 0.4);
+    /*  color */
+    color: greenyellow;
 
-  }
-    
-  
-  
-  /* Modal Content/Box */
-  .modal-content {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(36, 35, 35, 0.9); /* Black w/ opacity */
-    margin: 10% auto; /* 15% from the top and centered */
+}
+
+
+/* Modal Content/Box */
+.modal-content {
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(36, 35, 35, 0.9);
+    /* Black w/ opacity */
+    margin: 10% auto;
+    /* 15% from the top and centered */
     padding: 20px;
     border: 4px solid greenyellow;
-    width: 60%; /* Could be more or less, depending on screen size */
+    width: 60%;
+    /* Could be more or less, depending on screen size */
     height: 50%;
-    color:greenyellow;
+    color: greenyellow;
     font-family: orbitron, verdana;
     font-size: 1.2rem;
     text-align: center;
@@ -439,32 +424,19 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  
-  /* The Close Button */
-  .close {
+}
+
+/* The Close Button */
+.close {
     color: #aaa;
     float: right;
     font-size: 28px;
     font-weight: bold;
-  }
-  
-  .close:hover,
-  .close:focus {
+}
+
+.close:hover,
+.close:focus {
     color: black;
     text-decoration: none;
     cursor: pointer;
-  }
-
-
-
-
-
-
-
-
-
-
-
-
-
+}

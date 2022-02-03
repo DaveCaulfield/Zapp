@@ -76,7 +76,7 @@ function gameLoop() {
   loopCount++;
   if (loopCount < 33) {
     setTimeout(gameLoop, spaceshipVisible ? 1000 : 1800);
-  } else {    
+  } else {
     scoreModal();
   }
 }
@@ -94,7 +94,7 @@ function startTimer() {
     document.getElementById("time-display").innerHTML = (`Timer ${time}sec`);
     setTimeout(startTimer, 1000);
   }
-  if (time === 0 && !audioGameOver.muted){
+  if (time === 0 && !audioGameOver.muted) {
     playGameOver();
   }
 }
@@ -110,9 +110,8 @@ function startTimer() {
 // set onclick to:
 // decrement the score.
 // apply the score to the scoreboard.
-// play sound effect.
-
-// create a random number between 1-8
+// play sound effect.  
+// for ufo create a random number between 1-8
 // (use random-1 to translate 1-8 into index count 0-7)
 // add .ufo class to apply ufo image.
 // set onclick to:
@@ -142,7 +141,6 @@ function spaceships() {
     document.getElementById("player-score").innerText = "Crypto Coins " + score * 1000;
     playUfoSound();
   };
-
 }
 
 
@@ -187,11 +185,11 @@ function playAlienSound() {
 //sound effect for game over
 function playGameOver() {
   let audioGameOver = new Audio("assets/sounds/game-over.mp3");
-    audioGameOver.play();
+  audioGameOver.play();
 }
 
 
-/* ......................Audio mute feature.......................*/
+/* .........................Audio mute feature.......................*/
 function enableMute() {
   audioGameOver.muted = true;
   audioGameMusic.muted = true;
@@ -264,22 +262,22 @@ let infoModal = document.getElementById("infoModal");
 let infoSpan = document.getElementById("info-span");
 
 // Display game instructions
-  function openInfo(){
+function openInfo() {
   infoModal.style.display = "block";
   document.getElementById("info-paragraph").innerHTML = "Tap or click on the rogue UFO to score crypto coins . . . but be careful, if you tap or click on a friendly alien you will loose coins.";
-  }
+}
 
 // close the modal with (X)
-  if(infoSpan){
-    infoSpan.onclick = function() {
-      infoModal.style.display = "none";
-      window.location.reload(); // refresh game when modal is closed
-    };
-    }
-  //close the modal clicking anywhere on window
-    window.onclick = function(event) {
-      if (event.target == infoModal) {
-        infoModal.style.display = "none";
-        window.location.reload(); // refresh game when modal is closed
-      }
-    };
+if (infoSpan) {
+  infoSpan.onclick = function () {
+    infoModal.style.display = "none";
+    window.location.reload(); // refresh game when modal is closed
+  };
+}
+//close the modal clicking anywhere on window
+window.onclick = function (event) {
+  if (event.target == infoModal) {
+    infoModal.style.display = "none";
+    window.location.reload(); // refresh game when modal is closed
+  }
+};
